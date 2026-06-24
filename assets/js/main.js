@@ -19,6 +19,31 @@ function sendToWhatsapp() {
 
     window.open(whatsappUrl, '_blank').focus();
 }
+function sendSubToWhatsapp() {
+    const phoneNumber = "9837765643"; 
+
+    const contactName = document.getElementById("Cname").value;
+    const contactPhone = document.getElementById("Cphone").value;
+    const ContactEmail = document.getElementById("Cemail").value;
+    const contactSubject = document.getElementById("Csubject").value;
+    const contactMessage = document.getElementById("Cmessage").value;
+
+    if (!contactName || !contactPhone || !ContactEmail || !contactSubject || !contactMessage) {
+        alert("Please fill out all fields before submitting.");
+        return;
+    }
+
+    const textSubjectMessage = "Hello, I would like to submit my form details:%0a%0a"
+        + "*Name:* " + encodeURIComponent(contactName) + "%0a"
+        + "*Phone:* " + encodeURIComponent(contactPhone) + "%0a"
+        + "*Email:* " + encodeURIComponent(ContactEmail) + "%0a"
+        + "*Subject:* " + encodeURIComponent(contactSubject) + "%0a"
+        + "*Message:* " + encodeURIComponent(contactMessage);
+
+    const whatsappSubUrl = "https://wa.me/" + phoneNumber + "?text=" + textSubjectMessage;
+
+    window.open(whatsappSubUrl, '_blank').focus();
+}
 
 
 

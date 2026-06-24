@@ -1256,9 +1256,9 @@
               <div class="col-lg-7">
                 <div class="contact-inner">
                   <div class="contact-form">
-                    <div id="form-messages" class="error"></div>
+                    
                     <form
-                      action="https://formspree.io/f/mzzvreok"
+                      action=""
                       class="tmp-dynamic-form"
                       id="contact-form"
                       method="POST"
@@ -1269,7 +1269,7 @@
                             <input
                               class="input-field"
                               name="name"
-                              id="contact-name"
+                              id="Cname"
                               placeholder="Your Name"
                               type="text"
                               required
@@ -1282,7 +1282,7 @@
                             <input
                               class="input-field"
                               name="phone"
-                              id="contact-phone"
+                              id="Cphone"
                               placeholder="Phone Number"
                               type="tel"
                               required
@@ -1294,7 +1294,7 @@
                           <div class="form-group">
                             <input
                               class="input-field"
-                              id="contact-email"
+                              id="Cemail"
                               name="email"
                               placeholder="Your Email"
                               type="email"
@@ -1308,7 +1308,7 @@
                             <input
                               class="input-field"
                               type="text"
-                              id="subject"
+                              id="Csubject"
                               name="subject"
                               placeholder="Subject"
                             />
@@ -1321,7 +1321,7 @@
                               class="input-field"
                               placeholder="Your Message"
                               name="message"
-                              id="contact-message"
+                              id="Cmessage"
                               required
                             ></textarea>
                           </div>
@@ -1334,6 +1334,7 @@
                               name="submit"
                               type="submit"
                               id="submit"
+                              onclick="sendSubToWhatsapp()"
                             >
                               <span class="icon-reverse-wrapper">
                                 <span class="btn-text">Appointment Now</span>
@@ -1600,5 +1601,9 @@
     <script src="assets/js/plugins/text-type.js"></script>
     <!-- custom Js -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      
+    </script>
   </body>
 </html>
