@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href=""
-    />
+    <link rel="shortcut icon" type="image/x-icon" href="" />
     <title>Portfolio</title>
     <!-- Bootstrap min css -->
     <link rel="stylesheet" href="assets/css/vendor/fontawesome.css" />
@@ -48,7 +44,6 @@
                 <ul class="tmp-mainmenu">
                   <li>
                     <a href="#">Home </a>
-                
                   </li>
                   <li>
                     <a href="about.html">About</a>
@@ -292,7 +287,7 @@
                     <span class="cd-headline clip is-full-width">
                       <span class="cd-words-wrapper">
                         <b class="is-visible theme-gradient">Web Designer.</b>
-                        <b class="is-hidden theme-gradient">Web Developer.</b> 
+                        <b class="is-hidden theme-gradient">Web Developer.</b>
                         <b class="is-hidden theme-gradient">UI/UX Designer.</b>
                         <b class="is-hidden theme-gradient">Freelancer.</b>
                         <b class="is-hidden theme-gradient">Content Writer.</b>
@@ -311,10 +306,7 @@
                 <div
                   class="button-area-banner-one tmp-scroll-trigger tmp-fade-in animation-order-4"
                 >
-                  <a
-                    class="tmp-btn hover-icon-reverse radius-round"
-                    href=""
-                  >
+                  <a class="tmp-btn hover-icon-reverse radius-round" href="">
                     <span class="icon-reverse-wrapper">
                       <span class="btn-text">View Portfolio</span>
                       <span class="btn-icon"
@@ -1266,10 +1258,10 @@
                   <div class="contact-form">
                     <div id="form-messages" class="error"></div>
                     <form
+                      action="https://formspree.io/f/mzzvreok"
                       class="tmp-dynamic-form"
                       id="contact-form"
                       method="POST"
-                      action=""
                     >
                       <div class="contact-form-wrapper row">
                         <div class="col-lg-6">
@@ -1289,6 +1281,7 @@
                           <div class="form-group">
                             <input
                               class="input-field"
+                              name="phone"
                               id="contact-phone"
                               placeholder="Phone Number"
                               type="tel"
@@ -1499,6 +1492,7 @@
               <input
                 class="input-field"
                 name="name"
+                id="name"
                 placeholder="Your Name"
                 type="text"
                 required
@@ -1508,6 +1502,7 @@
               <input
                 class="input-field"
                 name="email"
+                id="email"
                 placeholder="Your Email"
                 type="email"
                 required
@@ -1518,11 +1513,14 @@
                 class="input-field"
                 placeholder="Your Message"
                 name="message"
+                id="message"
                 required
               ></textarea>
             </div>
             <div class="field">
-              <button name="submit" type="submit">Send Message</button>
+              <button name="submit" type="submit" onclick="sendToWhatsapp()">
+                Send Message
+              </button>
             </div>
           </form>
         </div>

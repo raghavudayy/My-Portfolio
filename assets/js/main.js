@@ -1,25 +1,24 @@
-/*---- Default JS INDEXING
+function sendToWhatsapp() {
+    const phoneNumber = "9837765643"; 
 
-    01.serviceWidget();
-    02.swiperJs();
-    03.wowActive();
-    04.wowActive();
-    05.counterUp();
-    06.tmpVedioActivation();
-    07.stickyHeader();
-    08.smoothScroll();
-    09.menuCurrentLink();
-    10.radialProgress();
-    11.fonklsAnimation();
-    12.rightDemo();
-    13.onePageNav();
-    14.tpm_mobileMenuActive();
-    15.stickyToTop();
-    16.tmpcustomAnimation();
-    17.popupMobileMenu();
-    18.contactForm();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
 
-----*/
+    if (!name || !email || !message) {
+        alert("Please fill out all fields before submitting.");
+        return;
+    }
+
+    const textMessage = "Hello, I would like to submit my form details:%0a%0a"
+        + "*Name:* " + encodeURIComponent(name) + "%0a"
+        + "*Email:* " + encodeURIComponent(email) + "%0a"
+        + "*Message:* " + encodeURIComponent(message);
+
+    const whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + textMessage;
+
+    window.open(whatsappUrl, '_blank').focus();
+}
 
 
 
