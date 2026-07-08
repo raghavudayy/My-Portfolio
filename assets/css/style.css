@@ -27618,3 +27618,61 @@ body.tmp-white-version.color-primary-3rd .services-widget.v2 .active-bg {
   color: #3d3d3d !important;
 }
 /*# sourceMappingURL=../maps/style.css.map */
+
+
+
+.skill-card{
+
+    background:#141414;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:30px;
+    transition:.35s ease;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+    border-color:#ff014f;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+.skill-card h4{
+
+    font-size:24px;
+    font-weight:700;
+    color:#fff;
+
+}
+
+.skill-badge{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    background:#1e1e1e;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#fff;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+.skill-badge:hover{
+
+    background:#ff014f;
+    border-color:#ff014f;
+    cursor:default;
+
+}
