@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Main Application Entry Point - Azurio Web Developer Portfolio
+   Main Application Entry Point - Uday Pratap Raghav Web Developer Portfolio
    ========================================================================== */
 
 import '../styles/main.css';
@@ -61,5 +61,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initStatsAnimation();
 
-  console.log('✨ Azurio Web Developer Portfolio initialized successfully.');
+  console.log('Uday Pratap Raghav Web Developer Portfolio initialized successfully.');
 });

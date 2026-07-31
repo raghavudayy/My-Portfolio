@@ -1807,7 +1807,7 @@ textarea:-webkit-autofill {
   overflow: hidden;
 }
 
-.footer-nav-grid-azurio {
+.footer-nav-grid-portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
@@ -2350,7 +2350,7 @@ textarea:-webkit-autofill {
   }
 
   /* Footer on Tablet */
-  .footer-nav-grid-azurio {
+  .footer-nav-grid-portfolio {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
@@ -2770,7 +2770,7 @@ textarea:-webkit-autofill {
     justify-content: center;
   }
 
-  .footer-nav-grid-azurio {
+  .footer-nav-grid-portfolio {
     grid-template-columns: 1fr;
     gap: 24px;
   }

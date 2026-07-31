@@ -82,7 +82,7 @@ export function initContactForm() {
           emailVal.textContent = 'Copied to clipboard!';
         }
 
-        showToast('Email webdevuday@gmail.com copied to clipboard! 🚀');
+        showToast('Email webdevuday@gmail.com copied to clipboard!');
 
         setTimeout(() => {
           if (copyTag) {
@@ -113,7 +113,7 @@ export function initContactForm() {
       e.preventDefault();
       const success = sendToWhatsapp();
       if (success) {
-        showToast('Opening WhatsApp to send your message... 🚀');
+        showToast('Opening WhatsApp to send your message...');
       }
     });
   }

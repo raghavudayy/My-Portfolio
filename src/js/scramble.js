@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Text Scramble Effect Module - Azurio Web Developer Portfolio
+   Text Scramble Effect Module - Uday Pratap Raghav Web Developer Portfolio
    ========================================================================== */
 
 export class TextScramble {
