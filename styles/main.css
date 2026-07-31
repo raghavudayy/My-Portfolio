@@ -626,6 +626,21 @@ button:focus-visible {
   gap: 0;
 }
 
+.github-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.github-stats-grid .stat-connected-card {
+  border-right: 1px solid var(--border-color);
+  border-bottom: none;
+}
+
+.github-stats-grid .stat-connected-card:last-child {
+  border-right: none;
+}
+
 .stat-connected-card {
   padding: 16px 24px;
   display: flex;
@@ -2230,6 +2245,31 @@ textarea:-webkit-autofill {
     gap: 0;
   }
 
+  /* GitHub Section Tablet Grid (2x2) */
+  #github .stats-connected-shell {
+    padding: 24px 20px;
+  }
+
+  .github-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .github-stats-grid .stat-connected-card {
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px 18px;
+  }
+
+  .github-stats-grid .stat-connected-card:nth-child(2n) {
+    border-right: none;
+  }
+
+  .github-stats-grid .stat-connected-card:nth-child(3),
+  .github-stats-grid .stat-connected-card:nth-child(4) {
+    border-bottom: none;
+  }
+
   .stat-connected-card {
     padding: 14px 18px;
     border-right: 1px solid var(--border-color);
@@ -2616,6 +2656,49 @@ textarea:-webkit-autofill {
   .stats-cards-grid {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+
+  /* GitHub Section Mobile Grid (1 column stacked) */
+  #github .stats-connected-shell {
+    padding: 20px 14px;
+    margin-top: 20px;
+  }
+
+  #github .stats-header-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .github-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .github-stats-grid .stat-connected-card {
+    border-right: none !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    padding: 18px 12px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .github-stats-grid .stat-connected-card:last-child {
+    border-bottom: none !important;
+  }
+
+  #github .stat-number-val {
+    font-size: clamp(1.8rem, 6.5vw, 2.4rem);
+    margin-bottom: 6px;
+  }
+
+  #github .stat-card-subtext {
+    max-width: 260px;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    line-height: 1.35;
   }
 
   .stat-connected-card {
