@@ -6,7 +6,7 @@ export function initThemeSwitcher() {
   const switcherBtn = document.getElementById('theme-toggle') || document.getElementById('color-switcher');
   
   // Default strictly to Light (White) theme unless user explicitly chose dark in localStorage
-  const savedTheme = localStorage.getItem('azurio_theme');
+  const savedTheme = localStorage.getItem('portfolio_theme') || localStorage.getItem('azurio_theme');
   let currentTheme = savedTheme || 'light';
   applyTheme(currentTheme);
 
@@ -15,14 +15,14 @@ export function initThemeSwitcher() {
       e.preventDefault();
       currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
       applyTheme(currentTheme);
-      localStorage.setItem('azurio_theme', currentTheme);
+      localStorage.setItem('portfolio_theme', currentTheme);
     });
   }
 
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     if (switcherBtn) {
-      switcherBtn.textContent = theme === 'dark' ? 'DAY / ☼' : 'NIGHT / ☾';
+      switcherBtn.textContent = theme === 'dark' ? 'LIGHT MODE' : 'DARK MODE';
     }
   }
 }

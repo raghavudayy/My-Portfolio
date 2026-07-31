@@ -86,7 +86,7 @@
   <!-- Ultra-Minimal Page Loader -->
   <div class="mxd-loader" id="mxd-loader" role="status" aria-label="Loading Website">
     <div class="mxd-loader__content">
-      <span class="mxd-loader__brand">UDAY PRATAP RAGHAV</span>
+      <span class="mxd-loader__brand" data-profile="fullNameUpper">UDAY PRATAP RAGHAV</span>
       <div class="mxd-loader__count" id="mxd-loader-count">0%</div>
     </div>
   </div>
@@ -154,7 +154,7 @@
         <div class="menu-right-block">
           <div class="menu-right-tag">[ INQUIRIES &amp; COLLABORATION ]</div>
           <div class="menu-contact-cards">
-            <a href="mailto:webdevuday@gmail.com" class="menu-contact-card">
+            <a href="mailto:webdevuday@gmail.com" class="menu-contact-card" data-profile-href="email">
               <div class="menu-contact-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <rect x="2" y="4" width="20" height="16" rx="2" />
@@ -163,11 +163,11 @@
               </div>
               <div class="menu-contact-info">
                 <span class="menu-contact-label">DIRECT EMAIL</span>
-                <span class="menu-contact-val">webdevuday@gmail.com</span>
+                <span class="menu-contact-val" data-profile="email">webdevuday@gmail.com</span>
               </div>
             </a>
 
-            <a href="tel:+919837765643" class="menu-contact-card">
+            <a href="tel:+919837765643" class="menu-contact-card" data-profile-href="phone">
               <div class="menu-contact-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path
@@ -176,7 +176,7 @@
               </div>
               <div class="menu-contact-info">
                 <span class="menu-contact-label">DIRECT PHONE</span>
-                <span class="menu-contact-val">+91 9837765643</span>
+                <span class="menu-contact-val" data-profile="phone">+91 9837765643</span>
               </div>
             </a>
 
@@ -189,7 +189,7 @@
               </div>
               <div class="menu-contact-info">
                 <span class="menu-contact-label">LOCATION</span>
-                <span class="menu-contact-val">Bulandshahr, UP, India</span>
+                <span class="menu-contact-val" data-profile="location">Bulandshahr, UP, India</span>
               </div>
             </div>
           </div>
@@ -198,14 +198,14 @@
         <div class="menu-right-block">
           <div class="menu-right-tag">[ SOCIAL ECOSYSTEM ]</div>
           <div class="menu-social-pills">
-            <a href="https://github.com/raghavudayy" target="_blank" class="menu-social-pill">
+            <a href="https://github.com/raghavudayy" target="_blank" class="menu-social-pill" data-profile-href="github">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
                 <path
                   d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
               </svg>
               <span>GitHub ↗</span>
             </a>
-            <a href="https://www.linkedin.com/in/raghavudayy" target="_blank" class="menu-social-pill">
+            <a href="https://www.linkedin.com/in/raghavudayy" target="_blank" class="menu-social-pill" data-profile-href="linkedin">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                 <rect x="2" y="9" width="4" height="12" />
@@ -223,12 +223,12 @@
   <header class="mxd-header">
     <a href="#hero" class="mxd-logo" aria-label="Uday Pratap Raghav Home">
       <img src="./img/logo dark.png" alt="Uday Pratap Raghav Logo" class="mxd-logo__img" />
-      <span class="mxd-logo__text mxd-scramble" data-original="UDAY PRATAP RAGHAV">UDAY PRATAP RAGHAV</span>
+      <span class="mxd-logo__text mxd-scramble" data-original="UDAY PRATAP RAGHAV" data-profile="fullNameUpper">UDAY PRATAP RAGHAV</span>
     </a>
 
     <div class="mxd-header__controls">
       <a href="#contact" class="header-say-hello">SAY HELLO ↗</a>
-      <button class="mxd-color-switcher" id="theme-toggle" aria-label="Toggle Night/Day Mode">NIGHT / DAY ☾</button>
+      <button class="mxd-color-switcher" id="theme-toggle" aria-label="Toggle Theme">DARK MODE</button>
       <div class="mxd-menu__contain">
         <button class="mxd-menu__hamburger" id="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
           <span class="hamburger__line"></span>
@@ -992,18 +992,30 @@
         <div class="build-grid">
           <article class="build-card">
             <div>
-              <div class="build-card-icon">📦</div>
+              <div class="build-card-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/>
+                  <path d="m3.3 7 8.7 5 8.7-5"/>
+                  <path d="M12 22V12"/>
+                </svg>
+              </div>
               <h3 class="build-card-title">ClientFlow CRM Repository</h3>
               <p class="build-card-desc">Source repository containing PHP database singletons, SQL migration scripts,
                 and Bootstrap view templates.</p>
             </div>
             <a href="https://github.com/raghavudayy/clientflow" target="_blank" class="scroll-explore"
-              style="font-size:0.78rem; padding:8px 16px;">VIEW ON GITHUB ↗</a>
+              style="font-size:0.78rem; padding:8px 16px;" data-profile-href="github">VIEW ON GITHUB ↗</a>
           </article>
 
           <article class="build-card">
             <div>
-              <div class="build-card-icon">⚛️</div>
+              <div class="build-card-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                  <polyline points="2 17 12 22 22 17"/>
+                  <polyline points="2 12 12 17 22 12"/>
+                </svg>
+              </div>
               <h3 class="build-card-title">NewsBoard React App</h3>
               <p class="build-card-desc">React 18 single-page application codebase with REST API integration and custom
                 hooks.</p>
@@ -1014,7 +1026,13 @@
 
           <article class="build-card">
             <div>
-              <div class="build-card-icon">👟</div>
+              <div class="build-card-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                  <line x1="3" y1="6" x2="21" y2="6"/>
+                  <path d="M16 10a4 4 0 0 1-8 0"/>
+                </svg>
+              </div>
               <h3 class="build-card-title">SneakSpot Footwear App</h3>
               <p class="build-card-desc">Vanilla JavaScript ES6 e-commerce repository utilizing browser LocalStorage.
               </p>
@@ -1250,9 +1268,9 @@
   <!-- Section 13: Memorable Footer -->
   <footer class="massive-footer">
     <div class="mxd-container">
-      <div class="footer-nav-grid-azurio">
+      <div class="footer-nav-grid-profile">
         <!-- Left Nav Links -->
-        <div class="footer-azurio-left">
+        <div class="footer-profile-left">
           <ul class="footer-nav-simple-list">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -1264,14 +1282,14 @@
         </div>
 
         <!-- Right Stacked Border Items -->
-        <div class="footer-azurio-right">
+        <div class="footer-profile-right">
           <div class="footer-item-row">
             <span class="footer-item-num">[01]</span>
-            <a href="https://github.com/raghavudayy" target="_blank" class="footer-item-title">Github Repository ↗</a>
+            <a href="https://github.com/raghavudayy" target="_blank" class="footer-item-title" data-profile-href="github">Github Repository ↗</a>
           </div>
           <div class="footer-item-row">
             <span class="footer-item-num">[02]</span>
-            <a href="https://www.linkedin.com/in/raghavudayy" target="_blank" class="footer-item-title">LinkedIn Profile
+            <a href="https://www.linkedin.com/in/raghavudayy" target="_blank" class="footer-item-title" data-profile-href="linkedin">LinkedIn Profile
               ↗</a>
           </div>
           <div class="footer-item-row">

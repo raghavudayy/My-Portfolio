@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Custom Cursor & Interactive Badges Module - Azurio Web Developer Portfolio
+   Custom Cursor & Interactive Badges Module - Uday Pratap Raghav Portfolio
    ========================================================================== */
 
 export function initCustomCursor() {
