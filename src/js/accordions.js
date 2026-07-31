@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Services Accordion Module - Uday Pratap Raghav Portfolio
+   Services Accordion Module - Azurio Web Developer Portfolio
    ========================================================================== */
 
 export function initAccordions() {

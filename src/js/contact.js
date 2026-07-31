@@ -2,10 +2,8 @@
    Contact Form & WhatsApp Integration Module - Uday Pratap Raghav Portfolio
    ========================================================================== */
 
-import { PROFILE_DATA } from './profile.js';
-
 export function sendToWhatsapp() {
-  const phoneNumber = PROFILE_DATA.phoneRaw || "9837765643"; 
+  const phoneNumber = "9837765643"; 
 
   const nameEl = document.getElementById("name") || document.getElementById("user-name") || document.getElementById("Cname");
   const emailEl = document.getElementById("email") || document.getElementById("user-email") || document.getElementById("Cemail");
@@ -32,7 +30,7 @@ export function sendToWhatsapp() {
 }
 
 export function sendSubToWhatsapp() {
-  const phoneNumber = PROFILE_DATA.phoneRaw || "9837765643"; 
+  const phoneNumber = "9837765643"; 
 
   const contactName = document.getElementById("Cname") ? document.getElementById("Cname").value.trim() : "";
   const contactPhone = document.getElementById("Cphone") ? document.getElementById("Cphone").value.trim() : "";
@@ -71,7 +69,7 @@ export function initContactForm() {
   // Copy Email to Clipboard Interaction
   if (copyBtn) {
     const handleCopy = () => {
-      const email = PROFILE_DATA.email || 'webdevuday@gmail.com';
+      const email = 'webdevuday@gmail.com';
       const emailVal = document.getElementById('email-value-text');
       const copyTag = document.getElementById('copy-status-tag');
 
@@ -84,7 +82,7 @@ export function initContactForm() {
           emailVal.textContent = 'Copied to clipboard!';
         }
 
-        showToast(`Email ${email} copied to clipboard!`);
+        showToast('Email webdevuday@gmail.com copied to clipboard! 🚀');
 
         setTimeout(() => {
           if (copyTag) {
@@ -96,7 +94,7 @@ export function initContactForm() {
           }
         }, 2500);
       }).catch(() => {
-        showToast(`Direct Email: ${email}`);
+        showToast('Direct Email: webdevuday@gmail.com');
       });
     };
 
@@ -115,7 +113,7 @@ export function initContactForm() {
       e.preventDefault();
       const success = sendToWhatsapp();
       if (success) {
-        showToast('Opening WhatsApp to send your message...');
+        showToast('Opening WhatsApp to send your message... 🚀');
       }
     });
   }

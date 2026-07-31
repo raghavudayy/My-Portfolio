@@ -1,9 +1,8 @@
 /* ==========================================================================
-   Main Application Entry Point - Uday Pratap Raghav Portfolio
+   Main Application Entry Point - Azurio Web Developer Portfolio
    ========================================================================== */
 
 import '../styles/main.css';
-import { initProfile } from './js/profile.js';
 import { initThemeSwitcher } from './js/theme.js';
 import { initScrambleEffects } from './js/scramble.js';
 import { initCustomCursor } from './js/cursor.js';
@@ -48,9 +47,6 @@ function initPageLoader() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Initialize Dynamic Profile Data Binding
-  initProfile();
-
   // Initialize Page Loader Percentage Count-up
   initPageLoader();
 
@@ -65,5 +61,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initStatsAnimation();
 
-  console.log('Portfolio initialized successfully.');
+  console.log('✨ Azurio Web Developer Portfolio initialized successfully.');
 });

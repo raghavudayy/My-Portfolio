@@ -7,21 +7,23 @@ export const PROJECTS_DATA = [
     id: 'clientflow',
     category: 'software',
     title: 'ClientFlow: CRM Management System',
-    summary: 'A streamlined Customer Relationship Management web application engineered for small businesses to track leads, client interactions, and sales pipelines.',
-    problem: 'Small businesses often rely on chaotic spreadsheets that lead to missed client follow-ups, untracked communication history, and data duplication.',
-    solution: 'Designed and developed a relational PHP/MySQL database system with clean CRUD workflows, role-based session authentication, and interactive lead status pipelines.',
+    summary: 'A lightweight CRM I built using PHP and MySQL to replace spreadsheet tracking for client leads and follow-ups.',
+    problem: 'Small businesses often struggle with managing client leads in messy spreadsheets, leading to lost contacts and missed follow-up dates.',
+    whyIBuiltIt: 'I wanted to build a practical tool that solves real business disorganization while deepening my understanding of relational database design and session security.',
+    myApproach: 'I used raw PHP and MySQL to construct a clean MVC structure with session management, parameterized queries, and Bootstrap forms.',
     role: 'Full Stack Developer & Database Architect',
     duration: '3 Weeks (Jan — Feb 2026)',
     techStack: ['PHP', 'MySQL', 'Bootstrap 5', 'JavaScript (ES6)', 'XAMPP'],
     features: [
-      'Relational Client & Contact Schema with Foreign Key Constraints',
+      'Relational Database Schema for Clients & Contacts',
       'Lead Status Pipeline (New, Contacted, Qualified, Closed)',
-      'Secure Session Authentication & Password Hashing',
-      'Exportable Client Reports & Dynamic Data Tables'
+      'Session-Based Auth & Password Hashing',
+      'Search & Data Filtering Tables'
     ],
-    challenges: 'Ensuring SQL injection prevention across complex search queries and managing state transitions between multi-step client onboarding forms.',
+    challenges: 'Preventing SQL injection while allowing flexible multi-field searching, and managing form state across multi-step client entries.',
     architecture: 'MVC-inspired PHP directory layout separating database connection singletons, routing handlers, and Bootstrap view templates.',
-    lessons: 'Deepened understanding of relational database normalization, index optimization for search queries, and defensive server-side data validation.',
+    lessons: 'Taught me how to normalize relational database schemas, write indexed SQL queries, and implement defensive server-side validation.',
+    futureImprovements: 'Add automated email reminders for upcoming follow-up dates and export capabilities for PDF client summaries.',
     image: './img/banner-clientflow.png',
     liveUrl: 'https://clientflow.free.nf/',
     githubUrl: 'https://github.com/raghavudayy/clientflow'
@@ -30,21 +32,23 @@ export const PROJECTS_DATA = [
     id: 'newsboard',
     category: 'webdev',
     title: 'NewsBoard: Live News Article Portal',
-    summary: 'A fast, real-time web portal fetching and rendering live global news stories across multiple categories with responsive grid layouts.',
-    problem: 'Traditional news aggregator sites are overloaded with heavy ad scripts, slow page load times, and poor mobile readability.',
-    solution: 'Built a lightweight React 18 single-page application utilizing REST API integration, client-side caching, and responsive CSS Grid cards.',
+    summary: 'A fast, clean news web app built with React 18 that fetches real-time articles from news APIs with category filters and search.',
+    problem: 'Most news aggregation sites are overloaded with ads, popups, and heavy scripts that slow down reading on mobile devices.',
+    whyIBuiltIt: 'I built NewsBoard to practice React component state management, custom hooks, and handling live REST API data cleanly.',
+    myApproach: 'Used React 18 and Vite with a custom hook (useFetchNews) to handle API requests, loading states, and category filters smoothly.',
     role: 'Frontend Engineer & React Developer',
     duration: '2 Weeks (Dec 2025 — Jan 2026)',
     techStack: ['React 18', 'JavaScript (ES6+)', 'REST API', 'Vite', 'CSS Modules'],
     features: [
-      'Real-Time Live News Fetching via REST Endpoints',
+      'Real-Time News Fetching via REST Endpoints',
       'Instant Category Filtering (Tech, Business, Science, Sports)',
-      'Asynchronous Search with Debounce Input Handler',
-      'Responsive Fluid Card Layout with Fallback Image Handling'
+      'Debounced Search Input for Fast Filtering',
+      'Fallback Image Handling for Missing Thumbnails'
     ],
-    challenges: 'Handling API rate limits gracefully and preventing layout shifts during dynamic image loading across mobile viewports.',
+    challenges: 'Managing API rate limits without breaking the UI and preventing layout shifts when news thumbnail images load asynchronously.',
     architecture: 'React Component Architecture using Custom Hooks (`useFetchNews`), Context API for global search state, and Vite bundling.',
-    lessons: 'Mastered React state management best practices, asynchronous API handling with try/catch resilience, and modern Vite build optimizations.',
+    lessons: 'Improved my understanding of custom React hooks, asynchronous try/catch error handling, and Vite build configuration.',
+    futureImprovements: 'Add bookmarking for offline reading using LocalStorage and custom user topic feeds.',
     image: './img/banner-newsboard.png',
     liveUrl: 'https://news-board-orcin.vercel.app/',
     githubUrl: 'https://github.com/raghavudayy/NewsBoard'
@@ -53,21 +57,23 @@ export const PROJECTS_DATA = [
     id: 'sneakspot',
     category: 'branding',
     title: 'SneakSpot: Footwear E-Commerce Storefront',
-    summary: 'An interactive online footwear storefront featuring client-side cart management, size selection, dynamic price calculations, and product filtering.',
-    problem: 'E-commerce demos often rely on heavy third-party UI libraries that slow down mobile performance and obscure core DOM manipulation fundamentals.',
-    solution: 'Constructed a pure Vanilla JavaScript e-commerce application utilizing Browser LocalStorage for persistent shopping cart state.',
+    summary: 'An interactive footwear shop built with vanilla JavaScript, featuring a persistent shopping cart using browser LocalStorage.',
+    problem: 'Many developer e-commerce projects rely heavily on third-party frameworks, hiding how core DOM manipulation and state persistence work under the hood.',
+    whyIBuiltIt: 'I wanted to push my core JavaScript skills by building a full store frontend using pure HTML, CSS, and vanilla JS without extra libraries.',
+    myApproach: 'Designed a modular JS structure separating cart state logic from DOM rendering, using LocalStorage to keep items in the cart even when refreshed.',
     role: 'Frontend Web Developer & UI Designer',
     duration: '2 Weeks (Nov — Dec 2025)',
     techStack: ['HTML5', 'CSS3 (Flexbox/Grid)', 'JavaScript (ES6)', 'Browser LocalStorage'],
     features: [
-      'Persistent Shopping Cart State powered by LocalStorage',
-      'Interactive Product Filtering by Category & Price Range',
-      'Dynamic Item Count & Total Checkout Calculation',
-      'Cross-Browser Tested Touch-Friendly Responsive UI'
+      'Shopping Cart State Saved in LocalStorage',
+      'Product Filtering by Category & Price Range',
+      'Live Price & Quantity Calculation',
+      'Mobile-Friendly Touch Interface'
     ],
-    challenges: 'Synchronizing cart count across multiple browser tabs and preventing duplicate item entries when updating quantity.',
+    challenges: 'Synchronizing cart state across open tabs and ensuring duplicate items updated quantities instead of creating duplicate entries.',
     architecture: 'Modular ES JavaScript pattern separating Cart Store logic, UI Renderer functions, and Event Listeners.',
-    lessons: 'Solidified DOM manipulation efficiency, event delegation techniques, and browser storage state management.',
+    lessons: 'Strengthened my core DOM manipulation skills, event delegation patterns, and browser storage handling.',
+    futureImprovements: 'Add user review ratings and a simulated multi-step checkout workflow.',
     image: './img/banner-sneakspot.png',
     liveUrl: 'https://sneak-spot.vercel.app/',
     githubUrl: 'https://github.com/raghavudayy/SneakSpot'
@@ -76,21 +82,23 @@ export const PROJECTS_DATA = [
     id: 'memonest',
     category: 'software',
     title: 'MemoNest: Secure Personal Diary Platform',
-    summary: 'A privacy-focused digital diary application allowing users to write, edit, tag, and organize encrypted personal notes securely.',
-    problem: 'Users need a simple, private space to document daily logs without third-party data tracking or complicated desktop software.',
-    solution: 'Developed a lightweight PHP application backed by MySQL user authentication, session security controls, and categorized note search.',
+    summary: 'A private digital diary web app where users can write, tag, search, and securely lock personal daily notes.',
+    problem: 'People want a private space for personal notes without intrusive data collection or needing heavy desktop applications.',
+    whyIBuiltIt: 'I built this to explore secure user session management, password encryption, and clean distraction-free UI design.',
+    myApproach: 'Combined PHP session controls, password hashing, and MySQL database storage with a minimal, dark-mode focused writing layout.',
     role: 'Full Stack Web Developer',
     duration: '2 Weeks (Oct — Nov 2025)',
     techStack: ['PHP', 'MySQL', 'CSS3', 'JavaScript', 'XAMPP'],
     features: [
-      'Encrypted User Registration & Authentication',
-      'CRUD Note Operations with Timestamped Revisions',
-      'Category Tagging & Keyword Search Filter',
-      'Clean Focus-Friendly Reading Interface'
+      'Secure User Registration & Auth',
+      'Note Creation, Editing, & Deletion (CRUD)',
+      'Category Tagging & Fast Search Filter',
+      'Minimal Distraction-Free Reading Interface'
     ],
-    challenges: 'Implementing robust session timeout handling to auto-lock sensitive notes after inactivity.',
+    challenges: 'Handling session timeouts gracefully so users don\'t lose unsaved drafts while keeping private notes auto-locked when inactive.',
     architecture: 'Clean PHP Architecture with parameterized SQL queries for security and lightweight CSS styling.',
-    lessons: 'Gained practical expertise in session lifecycle security, user data protection, and minimal distraction-free UI design.',
+    lessons: 'Taught me practical session security, database query safety, and building focus-oriented user interfaces.',
+    futureImprovements: 'Add Markdown editing support and note export options.',
     image: './img/banner-memonest.png',
     liveUrl: 'https://memonest.infinityfreeapp.com',
     githubUrl: 'https://github.com/raghavudayy/MemoNest'
@@ -99,21 +107,23 @@ export const PROJECTS_DATA = [
     id: 'daydrill',
     category: 'software',
     title: 'DayDrill: Productivity & Daily Planner',
-    summary: 'A productivity web application that helps users organize daily tasks, manage schedules, track habits, and stay focused with an intuitive dashboard designed to improve consistency and time management.',
-    problem: 'Users struggle to stay organized across fragmented task apps and lack a unified dashboard for tracking daily schedules, habit progress, and focus time.',
-    solution: 'Developed a PHP/MySQL productivity web app featuring task scheduling, dynamic habit tracking metrics, and custom priority workflows.',
+    summary: 'A full-stack planner application for organizing daily schedules, tracking habits, and managing focus time.',
+    problem: 'Juggling tasks across separate apps makes it hard to maintain a clear daily routine and monitor habit progress.',
+    whyIBuiltIt: 'I created DayDrill to build a single dashboard that combines task management with habit tracking in one place.',
+    myApproach: 'Developed a PHP backend paired with a MySQL relational database to store tasks, habit completions, and time logs.',
     role: 'Full Stack Web Developer',
     duration: '3 Weeks (Jan 2026)',
     techStack: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL'],
     features: [
-      'Intuitive Task Organization & Priority Scheduling',
-      'Interactive Daily Habit Tracker with Progress Metrics',
-      'Focus Mode & Dynamic Time Management Dashboard',
-      'Relational Data Storage powered by PHP & MySQL'
+      'Task Priority & Schedule Organization',
+      'Daily Habit Tracker with Progress Indicators',
+      'Focus Dashboard with Timer Tools',
+      'Structured PHP & MySQL Data Backend'
     ],
-    challenges: 'Designing an efficient database structure to handle recurring daily habits alongside one-time task schedules.',
+    challenges: 'Structuring the database schema to handle recurring daily habits alongside non-recurring one-off tasks without duplicating rows.',
     architecture: 'Modular PHP backend with MySQL relational schema and responsive vanilla CSS/JS dashboard frontend.',
-    lessons: 'Enhanced skills in state tracking across user sessions and building time-bound database query filters.',
+    lessons: 'Improved my ability to write complex SQL date queries and manage user session states across multiple pages.',
+    futureImprovements: 'Add visual streak counters and monthly productivity summary charts.',
     image: './img/banner-daydrill.png',
     liveUrl: 'https://github.com/raghavudayy/DayDrill-Scheduler',
     githubUrl: 'https://github.com/raghavudayy/DayDrill-Scheduler'
@@ -121,22 +131,24 @@ export const PROJECTS_DATA = [
   {
     id: 'salespilot',
     category: 'software',
-    title: 'SalesPilot CRM: Sales & Lead Management System',
-    summary: 'A full-stack Customer Relationship Management (CRM) system built to streamline lead management, customer tracking, quotations, follow-ups, employee roles, and sales workflows through a secure admin dashboard.',
-    problem: 'Growing sales teams face disorganization managing customer leads, tracking multi-stage quotation follow-ups, and controlling employee permissions.',
-    solution: 'Built a comprehensive PHP/MySQL CRM featuring RBAC role permissions, automated email follow-ups via PHPMailer, quotation generators, and lead pipeline tracking.',
+    title: 'SalesPilot CRM: Sales & Lead Management',
+    summary: 'A multi-role CRM built with PHP and MySQL to manage customer leads, quotation generation, automated follow-ups, and team permissions.',
+    problem: 'Growing sales teams struggle when lead assignments, quotes, and follow-up histories are scattered across separate communication channels.',
+    whyIBuiltIt: 'I wanted to build a complete backend management portal with role-based permissions and transactional email workflows.',
+    myApproach: 'Built a structured PHP application with MySQL relational tables, Bootstrap admin components, and PHPMailer integration.',
     role: 'Full Stack Developer & Systems Architect',
     duration: '4 Weeks (Dec 2025 — Jan 2026)',
     techStack: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL', 'Bootstrap', 'PHPMailer'],
     features: [
-      'Lead Management & Interactive Sales Pipeline',
-      'Customer Tracking, History & Quotation Generation',
-      'Role-Based Employee Access Control & Secure Admin Portal',
-      'Automated Email Notifications powered by PHPMailer'
+      'Lead Pipeline & Deal Status Tracking',
+      'Customer Record History & Quotation Generator',
+      'Role-Based Permissions (Admin vs Employee)',
+      'Transactional Email Notifications via PHPMailer'
     ],
-    challenges: 'Implementing granular role-based permissions to ensure employees only access assigned customer leads and quotations.',
+    challenges: 'Setting up granular access controls so sales reps only see their assigned leads while admins retain full system visibility.',
     architecture: 'Layered PHP CRM architecture with MySQL relational tables, Bootstrap UI components, and PHPMailer integration.',
-    lessons: 'Mastered role-based authorization design, automated transactional email workflows, and complex SQL joins for sales reporting.',
+    lessons: 'Deepened my knowledge of role-based authorization patterns, multi-table SQL joins, and PHPMailer SMTP setup.',
+    futureImprovements: 'Add analytics graphs for monthly sales conversions and exportable CSV reports.',
     image: './img/banner-salespilot.png',
     liveUrl: 'https://github.com/raghavudayy/SalesPilot',
     githubUrl: 'https://github.com/raghavudayy/SalesPilot'
@@ -145,21 +157,23 @@ export const PROJECTS_DATA = [
     id: 'streamtube',
     category: 'webdev',
     title: 'StreamTube: Video Streaming Platform',
-    summary: 'A full-featured YouTube-inspired video streaming platform with user authentication, video uploads, search, subscriptions, playlists, watch history, and a responsive interface optimized for both desktop and mobile devices.',
-    problem: 'Building media streaming platforms requires handling high-volume media metadata, asynchronous video uploads, user subscription channels, and seamless playback across devices.',
-    solution: 'Engineered a full-stack media platform supporting chunked video uploads, channel subscriptions, playlist creation, user watch history tracking, and responsive video player UI.',
+    summary: 'A media streaming web app inspired by YouTube with channel management, video uploads, search, subscriptions, and watch history.',
+    problem: 'Media web applications require careful backend data handling for video metadata, channel subscriptions, and playback controls.',
+    whyIBuiltIt: 'I built StreamTube to challenge myself with media handling, relational database models for social interactions, and custom video controls.',
+    myApproach: 'Used PHP for REST API endpoints and MySQL for user channels, video metadata, and playlists, paired with vanilla JS player controls.',
     role: 'Full Stack Web Developer',
     duration: '4 Weeks (Feb 2026)',
     techStack: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL'],
     features: [
-      'User Authentication & Custom Channel Profiles',
-      'Video Upload Management & Responsive Media Player',
-      'Search, Playlists, Subscriptions & Watch History',
-      'Mobile-Optimized Responsive Dark/Light UI'
+      'User Channel Creation & Profile Settings',
+      'Video Upload Handling & Custom Player Controls',
+      'Search, Channel Subscriptions, & Watch History',
+      'Responsive Dark/Light UI'
     ],
-    challenges: 'Optimizing media streaming playback and managing database relations for user subscriptions, history, and playlists efficiently.',
+    challenges: 'Optimizing relational database queries when loading video details alongside subscriber counts, comments, and related videos.',
     architecture: 'PHP RESTful endpoints managing MySQL video/channel relations paired with asynchronous JavaScript media controls.',
-    lessons: 'Gained extensive knowledge in media stream delivery, database relational modeling for user-generated content, and asynchronous search indexing.',
+    lessons: 'Learned how to model complex many-to-many database relationships and handle asynchronous media player events.',
+    futureImprovements: 'Add video quality selectors and comment thread replies.',
     image: './img/banner-streamtubepng.png',
     liveUrl: 'https://github.com/raghavuday98/StreamTube',
     githubUrl: 'https://github.com/raghavuday98/StreamTube'
@@ -171,7 +185,7 @@ export function initProjectsShowcase() {
   const modal = document.getElementById('project-modal');
   const modalClose = modal?.querySelector('.modal-close');
 
-  // Category Filtering (Dynamic recalculation of items)
+  // Category Filtering
   filterBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
       filterBtns.forEach((b) => b.classList.remove('active'));
@@ -194,7 +208,6 @@ export function initProjectsShowcase() {
 
   // Open Case Study Modal Trigger via Event Delegation
   document.addEventListener('click', (e) => {
-    // Check if clicked element or its parent is a case study trigger
     const trigger = e.target.closest('.open-case-study-btn, .hero-project-card, .mxd-demo-grid__image');
     if (!trigger) return;
 
@@ -227,26 +240,34 @@ export function initProjectsShowcase() {
     modalBody.innerHTML = `
       <button class="modal-close" id="modal-close-dynamic" aria-label="Close Modal">&times;</button>
       <img src="${project.image}" alt="${project.title}" class="modal-img" />
-      <div style="font-family:var(--font-mono); font-size:0.85rem; letter-spacing:0.12em; color:var(--text-muted); text-transform:uppercase; margin-bottom:8px;">CASE STUDY DETAILS</div>
+      <div style="font-family:var(--font-mono); font-size:0.85rem; letter-spacing:0.12em; color:var(--text-muted); text-transform:uppercase; margin-bottom:8px;">CASE STUDY &amp; PROJECT STORY</div>
       <h3 class="modal-title">${project.title}</h3>
       <p class="modal-description">${project.summary}</p>
       
       <div class="case-study-details-grid">
         <div class="case-study-block">
-          <h4>Problem Statement</h4>
+          <h4>The Problem</h4>
           <p>${project.problem}</p>
         </div>
         <div class="case-study-block">
-          <h4>Engineering Solution</h4>
-          <p>${project.solution}</p>
+          <h4>Why I Built It</h4>
+          <p>${project.whyIBuiltIt}</p>
         </div>
         <div class="case-study-block">
-          <h4>Architecture & Layout</h4>
-          <p>${project.architecture}</p>
+          <h4>My Approach</h4>
+          <p>${project.myApproach}</p>
         </div>
         <div class="case-study-block">
-          <h4>Key Challenges & Resolution</h4>
+          <h4>Challenges Faced</h4>
           <p>${project.challenges}</p>
+        </div>
+        <div class="case-study-block">
+          <h4>What I Learned</h4>
+          <p>${project.lessons}</p>
+        </div>
+        <div class="case-study-block">
+          <h4>Future Improvements</h4>
+          <p>${project.futureImprovements}</p>
         </div>
       </div>
 
@@ -279,3 +300,4 @@ export function initProjectsShowcase() {
     document.body.style.overflow = '';
   }
 }
+

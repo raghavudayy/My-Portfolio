@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Scroll & Parallax Animations Module - Uday Pratap Raghav Portfolio
+   Scroll & Parallax Animations Module - Azurio Portfolio
    ========================================================================== */
 
 export function initScrollAnimations() {
