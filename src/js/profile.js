@@ -7,11 +7,14 @@ export const PROFILE_DATA = {
   firstName: 'Uday',
   lastName: 'Raghav',
   fullNameUpper: 'UDAY PRATAP RAGHAV',
-  title: 'Full Stack Web Developer & Quality Analyst',
+  title: 'Full Stack Web Developer',
   role: 'Software Developer Intern & Full Stack Web Engineer',
-  company: 'Sunlite Systems',
-  education: 'BCA (2023–26) @ IIMT College',
+  company: 'Sunlite Systems Pvt. Ltd.',
+  companyLocation: 'Vaishali, Ghaziabad, UP, India',
+  internshipDuration: 'Feb 2026 — Present',
+  education: 'BCA (2023–26) @ IIMT College of Management, Greater Noida',
   location: 'Bulandshahr, UP, India',
+  collegeLocation: 'Greater Noida, UP, India',
   email: 'webdevuday@gmail.com',
   phone: '+91 9837765643',
   phoneRaw: '9837765643',
@@ -19,6 +22,7 @@ export const PROFILE_DATA = {
   githubUsername: 'raghavudayy',
   linkedin: 'https://www.linkedin.com/in/raghavudayy',
   website: 'https://www.raghavudayy.in/',
+  resumeUrl: './resume.html',
   avatar: './img/uday/uday.png'
 };
 

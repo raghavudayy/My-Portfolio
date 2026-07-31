@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uday Pratap Raghav — Resume (ATS Friendly)</title>
+  <style>
+    :root {
+      --text-main: #111827;
+      --text-muted: #4b5563;
+      --border-color: #d1d5db;
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-family);
+      color: var(--text-main);
+      background: #f9fafb;
+      line-height: 1.5;
+      font-size: 11pt;
+      padding: 40px 20px;
+    }
+
+    .resume-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 48px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .no-print-bar {
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111827;
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 6px;
+    }
+
+    .no-print-btn {
+      background: #2563eb;
+      color: #ffffff;
+      border: none;
+      padding: 8px 16px;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .no-print-btn:hover {
+      background: #1d4ed8;
+    }
+
+    header {
+      border-bottom: 2px solid var(--text-main);
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 22pt;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+
+    .title-subtitle {
+      font-size: 12pt;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .contact-line {
+      font-size: 9.5pt;
+      color: var(--text-muted);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .contact-line a {
+      color: var(--text-main);
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 12pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--text-main);
+      padding-bottom: 3px;
+      margin-bottom: 10px;
+    }
+
+    .summary-text {
+      font-size: 10pt;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    .item-block {
+      margin-bottom: 14px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+
+    .item-sub {
+      display: flex;
+      justify-content: space-between;
+      font-style: italic;
+      font-size: 9.5pt;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 18px;
+    }
+
+    li {
+      font-size: 9.5pt;
+      margin-bottom: 3px;
+      line-height: 1.4;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 6px 16px;
+      font-size: 9.5pt;
+    }
+
+    .skills-label {
+      font-weight: 700;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .no-print-bar {
+        display: none !important;
+      }
+      .resume-container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="no-print-bar">
+    <span>ATS Friendly Resume — Uday Pratap Raghav</span>
+    <div>
+      <button onclick="window.print()" class="no-print-btn">Print / Save as PDF</button>
+      <a href="../" class="no-print-btn" style="background:#4b5563; margin-left: 8px;">Back to Portfolio</a>
+    </div>
+  </div>
+
+  <div class="resume-container">
+    <header>
+      <h1>Uday Pratap Raghav</h1>
+      <div class="title-subtitle">Full Stack Web Developer &amp; Software Developer Intern</div>
+      <div class="contact-line">
+        <span>Bulandshahr, UP, India</span>
+        <span>•</span>
+        <span>Phone: +91 9837765643</span>
+        <span>•</span>
+        <span>Email: <a href="mailto:webdevuday@gmail.com">webdevuday@gmail.com</a></span>
+      </div>
+      <div class="contact-line" style="margin-top: 4px;">
+        <span>Portfolio: <a href="https://www.raghavudayy.in/" target="_blank">raghavudayy.in</a></span>
+        <span>•</span>
+        <span>GitHub: <a href="https://github.com/raghavudayy" target="_blank">github.com/raghavudayy</a></span>
+        <span>•</span>
+        <span>LinkedIn: <a href="https://www.linkedin.com/in/raghavudayy" target="_blank">linkedin.com/in/raghavudayy</a></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p class="summary-text">
+        Detail-oriented Full Stack Web Developer &amp; Software Developer Intern with hands-on experience building production-ready web applications using React.js, PHP 8, MySQL, JavaScript (ES6+), REST APIs, and Bootstrap. Solid understanding of relational database schema design, MVC architecture, responsive frontend interfaces, and web testing concepts.
+      </p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skills-label">Languages &amp; Frameworks:</div>
+        <div>JavaScript (ES6+), React.js, PHP 8, HTML5, CSS3, Bootstrap 5</div>
+        
+        <div class="skills-label">Database &amp; Backend:</div>
+        <div>MySQL, Relational Schema Design (RDBMS), REST API Integration, Session Management</div>
+
+        <div class="skills-label">Developer Tools &amp; Testing:</div>
+        <div>Git, GitHub, Postman, Vite, Vercel, Basic QA &amp; Cross-Browser Testing</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Work Experience</h2>
+      <div class="item-block">
+        <div class="item-header">
+          <span>Software Developer Intern</span>
+          <span>Feb 2026 — Present</span>
+        </div>
+        <div class="item-sub">
+          <span>Sunlite Systems Pvt. Ltd.</span>
+          <span>Vaishali, Ghaziabad, UP, India</span>
+        </div>
+        <ul>
+          <li>Developed responsive user interfaces and client-side modules using React.js and vanilla JavaScript ES6+.</li>
+          <li>Engineered backend database handlers and PHP REST APIs with secure parameterized SQL queries.</li>
+          <li>Designed normalized MySQL database tables to optimize data lookup speeds and prevent redundancy.</li>
+          <li>Performed cross-browser layout testing across desktop and mobile devices to ensure UI consistency.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Key Projects</h2>
+      
+      <div class="item-block">
+        <div class="item-header">
+          <span>ClientFlow — CRM Management System</span>
+          <span>PHP 8, MySQL, Bootstrap 5, REST API</span>
+        </div>
+        <ul>
+          <li>Built a lightweight CRM application featuring lead pipeline status tracking, multi-field search filtering, and session-based user authentication.</li>
+          <li>Designed relational database schemas with indexed queries for client contact management.</li>
+        </ul>
+      </div>
+
+      <div class="item-block">
+        <div class="item-header">
+          <span>NewsBoard — Live Article Portal</span>
+          <span>React 18, JavaScript (ES6+), REST API, Vite</span>
+        </div>
+        <ul>
+          <li>Engineered a news aggregation portal fetching real-time articles with category filters and debounced search.</li>
+          <li>Implemented custom React hooks (`useFetchNews`) for clean asynchronous API data handling and loading states.</li>
+        </ul>
+      </div>
+
+      <div class="item-block">
+        <div class="item-header">
+          <span>SneakSpot — E-Commerce Storefront</span>
+          <span>JavaScript (ES6+), HTML5, CSS3, LocalStorage</span>
+        </div>
+        <ul>
+          <li>Developed an interactive footwear storefront with category filtering and persistent cart state using LocalStorage.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="item-block">
+        <div class="item-header">
+          <span>Bachelor of Computer Applications (BCA)</span>
+          <span>2023 — 2026</span>
+        </div>
+        <div class="item-sub">
+          <span>IIMT College of Management</span>
+          <span>Greater Noida, UP, India</span>
+        </div>
+        <ul>
+          <li>Core Curriculum: Data Structures, RDBMS Architecture, Web Development, and Software Testing.</li>
+          <li>Academic Achievements: Developed 8 practical full-stack projects combining PHP and React.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
