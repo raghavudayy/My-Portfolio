@@ -175,8 +175,8 @@ export const PROJECTS_DATA = [
     lessons: 'Learned how to model complex many-to-many database relationships and handle asynchronous media player events.',
     futureImprovements: 'Add video quality selectors and comment thread replies.',
     image: './img/banner-streamtubepng.png',
-    liveUrl: 'https://github.com/raghavuday98/StreamTube',
-    githubUrl: 'https://github.com/raghavuday98/StreamTube'
+    liveUrl: 'https://github.com/raghavudayy/StreamTube',
+    githubUrl: 'https://github.com/raghavudayy/StreamTube'
   }
 ];
 
