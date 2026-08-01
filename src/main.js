@@ -63,26 +63,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
   console.log('Uday Pratap Raghav Web Developer Portfolio initialized successfully.');
 });
-
-import { Helmet } from 'react-helmet-async';
-
-const SEO = ({ title, description, url }) => {
-  return (
-    <Helmet>
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      <link rel="canonical" href={url} />
-
-      {/* Open Graph */}
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:url" content={url} />
-
-      {/* Twitter */}
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-    </Helmet>
-  );
-};
-
-export default SEO;
