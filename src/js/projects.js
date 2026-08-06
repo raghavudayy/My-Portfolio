@@ -4,6 +4,33 @@
 
 export const PROJECTS_DATA = [
   {
+    id: 'tarang',
+    category: 'webdev',
+    title: 'Tarang: Full-Stack Social Media Platform',
+    summary: 'A modern, full-stack social media ecosystem inspired by X (Twitter) and Instagram, built with React, Node.js, Express, MongoDB, and Socket.IO for real-time networking.',
+    problem: 'Most beginner social media projects demonstrate simple CRUD operations without real-time communication, responsive mobile layouts, scalable MongoDB schemas, role management, or modern design polish.',
+    whyIBuiltIt: 'I built Tarang to explore the architecture and real-world challenges behind modern social networking applications—creating a complete ecosystem where users can share ideas, chat live, and build meaningful communities.',
+    myApproach: 'Architected a React 18 & TypeScript frontend with Framer Motion animations and Tailwind CSS, backed by a Node.js/Express REST API and Socket.IO server for instant one-to-one messaging and live notifications. Managed Cloudinary media uploads and MongoDB relational data models.',
+    role: 'Full-Stack Developer & Product Architect',
+    duration: '4 Weeks (Jan — Feb 2026)',
+    techStack: ['React 18', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO', 'Tailwind CSS', 'Framer Motion', 'JWT Auth', 'Cloudinary'],
+    features: [
+      'Secure User Auth & Session Management (JWT & Bcrypt)',
+      'Social Feed with Posts, Likes, Comments, Reposts & Bookmarks',
+      'Real-Time One-to-One Messaging & Live Notifications (Socket.IO)',
+      'Custom User Profiles, Bio, Cover Banners & Follower Graphs',
+      'Trending Hashtags, User Search & Creator Discovery',
+      'Glassmorphism & Liquid UI with Light/Dark Theme Switching'
+    ],
+    challenges: 'Designing a scalable MongoDB schema for social graphs, handling real-time Socket.IO socket connections across mobile breakpoints, managing infinite scroll state efficiently, and securing protected REST routes.',
+    architecture: 'Layered Full-Stack Architecture: React SPA Client → Socket.IO & Express REST Gateway API → MongoDB Database → Cloudinary Media CDN.',
+    lessons: 'Deepened my knowledge of real-time web socket state synchronization, JWT auth lifecycles, MongoDB document modeling, responsive UI performance, and component-driven architecture.',
+    futureImprovements: 'Video posts & stories, group video calling, AI-powered content recommendation feeds, and end-to-end encrypted messaging.',
+    image: './img/banner-tarang.png',
+    liveUrl: 'https://github.com/raghavudayy/Tarang',
+    githubUrl: 'https://github.com/raghavudayy/Tarang'
+  },
+  {
     id: 'clientflow',
     category: 'software',
     title: 'ClientFlow: CRM Management System',
