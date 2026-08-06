@@ -8,9 +8,9 @@
 
   <!-- SEO Meta Tags -->
   <meta name="description"
-    content="Official portfolio of Uday Pratap Raghav — Software Developer Intern & Full Stack Web Engineer specializing in React.js, PHP 8, MySQL, REST APIs, and modern web applications." />
+    content="Official portfolio of Uday Pratap Raghav — Software Developer Intern &amp; Full Stack Web Engineer showcasing Tarang (Full-Stack Social Media Platform), ClientFlow CRM, NewsBoard Live News, SneakSpot E-Commerce, MemoNest Diary, SalesPilot CRM, StreamTube Video Platform, and DayDrill Planner." />
   <meta name="keywords"
-    content="Uday Pratap Raghav, Full Stack Developer, Software Developer Intern, Sunlite Systems, React.js Developer, PHP Developer, Web Engineer Portfolio, Bulandshahr, Ghaziabad, raghavudayy" />
+    content="Tarang Social Media Platform, Tarang Project, ClientFlow CRM, NewsBoard React, SneakSpot E-Commerce, MemoNest Secure Diary, SalesPilot CRM, StreamTube Video Platform, DayDrill Planner, Uday Pratap Raghav, Full Stack Developer, Software Developer Intern, Sunlite Systems, React.js Developer, Node.js Developer, Express.js, MongoDB, Socket.IO, PHP 8, MySQL, Web Engineer Portfolio, Bulandshahr, Ghaziabad, raghavudayy" />
   <meta name="author" content="Uday Pratap Raghav" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://www.raghavudayy.in/" />
@@ -23,47 +23,187 @@
   <!-- Open Graph / Social Media Meta Tags -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.raghavudayy.in/" />
-  <meta property="og:title" content="Uday Pratap Raghav | Full Stack Web Developer &amp; Software Engineer" />
+  <meta property="og:title" content="Uday Pratap Raghav | Full Stack Developer Projects (Tarang, ClientFlow, NewsBoard)" />
   <meta property="og:description"
-    content="Explore live web application projects, custom CRM solutions, React portals, and full-stack software development by Uday Pratap Raghav." />
-  <meta property="og:image" content="https://www.raghavudayy.in/img/uday/uday.png" />
+    content="Explore full-stack web applications by Uday Pratap Raghav: Tarang (Real-Time Social Platform), ClientFlow CRM, NewsBoard, SneakSpot, MemoNest, SalesPilot, StreamTube &amp; DayDrill." />
+  <meta property="og:image" content="https://www.raghavudayy.in/img/banner-tarang.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:site_name" content="Uday Pratap Raghav Portfolio" />
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Uday Pratap Raghav | Full Stack Web Developer" />
+  <meta name="twitter:title" content="Uday Pratap Raghav | Full Stack Web Projects" />
   <meta name="twitter:description"
-    content="Full-Stack Web Developer crafting high-performance, accessible React &amp; PHP web applications." />
-  <meta name="twitter:image" content="https://www.raghavudayy.in/img/uday/uday.png" />
+    content="Full-Stack Web Engineer portfolio featuring Tarang (React, Node, Express, MongoDB, Socket.IO), ClientFlow CRM, NewsBoard, StreamTube &amp; more." />
+  <meta name="twitter:image" content="https://www.raghavudayy.in/img/banner-tarang.png" />
 
-  <!-- JSON-LD Structured Data for Search Engines -->
+  <!-- JSON-LD Structured Data for Search Engines & Project Indexing -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Uday Pratap Raghav",
-    "jobTitle": "Software Developer Intern",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Sunlite Systems Pvt. Ltd."
-    },
-    "almaMater": {
-      "@type": "EducationalOrganization",
-      "name": "IIMT College of Management"
-    },
-    "url": "https://www.raghavudayy.in/",
-    "image": "https://www.raghavudayy.in/img/uday/uday.png",
-    "sameAs": [
-      "https://github.com/raghavudayy",
-      "https://www.linkedin.com/in/raghavudayy"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Vaishali, Ghaziabad",
-      "addressRegion": "Uttar Pradesh",
-      "addressCountry": "India"
-    }
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://www.raghavudayy.in/#person",
+        "name": "Uday Pratap Raghav",
+        "jobTitle": "Software Developer Intern & Full Stack Engineer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Sunlite Systems Pvt. Ltd."
+        },
+        "almaMater": {
+          "@type": "EducationalOrganization",
+          "name": "IIMT College of Management"
+        },
+        "url": "https://www.raghavudayy.in/",
+        "image": "https://www.raghavudayy.in/img/uday/uday.png",
+        "sameAs": [
+          "https://github.com/raghavudayy",
+          "https://www.linkedin.com/in/raghavudayy"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Vaishali, Ghaziabad",
+          "addressRegion": "Uttar Pradesh",
+          "addressCountry": "India"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://www.raghavudayy.in/#projects",
+        "name": "Featured Software & Web Development Projects by Uday Pratap Raghav",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "WebApplication",
+              "name": "Tarang: Modern Full-Stack Social Media Platform",
+              "alternateName": "Tarang Social Platform",
+              "url": "https://github.com/raghavudayy/Tarang",
+              "image": "https://www.raghavudayy.in/img/banner-tarang.png",
+              "description": "A modern, full-stack social media ecosystem inspired by X (Twitter) and Instagram. Built with React 18, TypeScript, Node.js, Express, MongoDB, and Socket.IO for real-time messaging, interactive post feeds, and creator discovery.",
+              "applicationCategory": "SocialNetworkingApplication",
+              "operatingSystem": "Web Browser",
+              "softwareRequirements": "React 18, TypeScript, Node.js, Express.js, MongoDB, Socket.IO, Tailwind CSS, Framer Motion, JWT Auth",
+              "author": { "@id": "https://www.raghavudayy.in/#person" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "WebApplication",
+              "name": "ClientFlow: CRM Management System",
+              "alternateName": "ClientFlow CRM",
+              "url": "https://clientflow.free.nf/",
+              "image": "https://www.raghavudayy.in/img/banner-clientflow.png",
+              "description": "A lightweight CRM system built using PHP 8 and MySQL to manage client lead pipelines, contact records, and follow-up schedules.",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web Browser",
+              "softwareRequirements": "PHP 8, MySQL, Bootstrap 5, JavaScript (ES6+)",
+              "author": { "@id": "https://www.raghavudayy.in/#person" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "WebApplication",
+              "name": "NewsBoard: Live News Article Portal",
+              "alternateName": "NewsBoard Live News",
+              "url": "https://news-board-orcin.vercel.app/",
+              "image": "https://www.raghavudayy.in/img/banner-newsboard.png",
+              "description": "A fast, clean news web app built with React 18 that fetches real-time news articles via REST APIs with category filters and instant debounced search.",
+              "applicationCategory": "NewsApplication",
+              "operatingSystem": "Web Browser",
+              "softwareRequirements": "React 18, REST API, Vite, CSS Modules",
+              "author": { "@id": "https://www.raghavudayy.in/#person" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "WebApplication",
+              "name": "SneakSpot: Footwear E-Commerce Storefront",
+              "alternateName": "SneakSpot Footwear Store",
+              "url": "https://sneak-spot.vercel.app/",
+              "image": "https://www.raghavudayy.in/img/banner-sneakspot.png",
+              "description": "An interactive footwear store built with vanilla JavaScript, featuring dynamic cart management and persistent LocalStorage.",
+              "applicationCategory": "ShoppingApplication",
+              "operatingSystem": "Web Browser",
+              "softwareRequirements": "HTML5, CSS3, JavaScript (ES6), Browser LocalStorage",
+              "author": { "@id": "https://www.raghavudayy.in/#person" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "WebApplication",
+              "name": "MemoNest: Secure Personal Diary Platform",
+              "alternateName": "MemoNest Personal Diary",
+              "url": "https://memonest.infinityfreeapp.com",
+              "image": "https://www.raghavudayy.in/img/banner-memonest.png",
+              "description": "A private digital diary web application where users write, tag, search, and securely lock daily personal notes using PHP session security and password hashing.",
+              "applicationCategory": "SecurityApplication",
+              "operatingSystem": "Web Browser",
+              "softwareRequirements": "PHP, MySQL, CSS3, JavaScript, Auth Security",
+              "author": { "@id": "https://www.raghavudayy.in/#person" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "WebApplication",
+              "name": "SalesPilot CRM: Sales & Lead Management Platform",
+              "alternateName": "SalesPilot CRM",
+              "url": "https://github.com/raghavudayy/SalesPilot",
+              "image": "https://www.raghavudayy.in/img/banner-salespilot.png",
+              "description": "A multi-role CRM platform built with PHP 8 and MySQL to manage lead pipelines, quotation generator workflows, role permissions, and PHPMailer transactional email notifications.",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web Browser",
+              "softwareRequirements": "PHP 8, MySQL, Bootstrap 5, JavaScript, PHPMailer",
+              "author": { "@id": "https://www.raghavudayy.in/#person" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "WebApplication",
+              "name": "StreamTube: Video Streaming Web Application",
+              "alternateName": "StreamTube Video Platform",
+              "url": "https://github.com/raghavudayy/StreamTube",
+              "image": "https://www.raghavudayy.in/img/banner-streamtubepng.png",
+              "description": "A media streaming web platform featuring user channels, video uploads, custom player controls, subscriptions, and watch history.",
+              "applicationCategory": "MultimediaApplication",
+              "operatingSystem": "Web Browser",
+              "softwareRequirements": "HTML5, CSS3, JavaScript, PHP 8, MySQL",
+              "author": { "@id": "https://www.raghavudayy.in/#person" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@type": "WebApplication",
+              "name": "DayDrill: Productivity & Daily Planner",
+              "alternateName": "DayDrill Planner",
+              "url": "https://github.com/raghavudayy/DayDrill-Scheduler",
+              "image": "https://www.raghavudayy.in/img/banner-daydrill.png",
+              "description": "A full-stack planner application for organizing daily schedules, tracking daily habits, and managing focus time built with PHP and MySQL.",
+              "applicationCategory": "ProductivityApplication",
+              "operatingSystem": "Web Browser",
+              "softwareRequirements": "HTML5, CSS3, JavaScript, PHP, MySQL",
+              "author": { "@id": "https://www.raghavudayy.in/#person" }
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -647,14 +787,16 @@
         <!-- Bento Grid Case Studies -->
         <div class="mxd-demo-grid__gallery">
           <!-- Card 1: Tarang Social Media Platform -->
-          <article class="mxd-demo-grid__item" data-category="webdev" data-project-id="tarang">
+          <article class="mxd-demo-grid__item" data-category="webdev" data-project-id="tarang" itemscope itemtype="https://schema.org/WebApplication">
+            <meta itemprop="applicationCategory" content="SocialNetworkingApplication" />
+            <meta itemprop="operatingSystem" content="Web Browser" />
             <a href="#" class="mxd-demo-grid__image active-cursor-permanent open-case-study-btn"
               data-project-id="tarang" data-cursor-text="VIEW&#10;CASE STUDY">
-              <img src="./img/banner-tarang.png" alt="Tarang Social Media Platform Interface" />
+              <img src="./img/banner-tarang.png" alt="Tarang Social Media Platform Interface — Real-time Chat &amp; Networking App" itemprop="image" />
             </a>
             <div class="mxd-demo-grid__caption">
-              <a href="#" class="project-name-s open-case-study-btn" data-project-id="tarang">Tarang: Social Media Platform ↗</a>
-              <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.5;">
+              <a href="#" class="project-name-s open-case-study-btn" data-project-id="tarang" itemprop="name">Tarang: Social Media Platform ↗</a>
+              <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.5;" itemprop="description">
                 A modern, full-stack social media platform inspired by X and Instagram, built with React, Node.js, Express, MongoDB, and Socket.IO.
               </p>
               <div class="mxd-demo-grid__tags">
@@ -666,22 +808,24 @@
               <div style="display:flex; gap:12px; margin-top:10px;">
                 <button class="scroll-explore open-case-study-btn" data-project-id="tarang"
                   style="padding:6px 16px; font-size:0.78rem;">VIEW CASE STUDY ↗</button>
-                <a href="https://github.com/raghavudayy/Tarang" target="_blank" class="scroll-explore btn-outline"
-                  style="padding:6px 16px; font-size:0.78rem;">GITHUB REPO ↗</a>
+                <a href="https://github.com/raghavudayy/Tarang" target="_blank" rel="noopener" class="scroll-explore btn-outline"
+                  style="padding:6px 16px; font-size:0.78rem;" itemprop="url">GITHUB REPO ↗</a>
               </div>
             </div>
           </article>
-          <article class="mxd-demo-grid__item" data-category="software" data-project-id="clientflow">
+
+          <!-- Card 2: ClientFlow CRM -->
+          <article class="mxd-demo-grid__item" data-category="software" data-project-id="clientflow" itemscope itemtype="https://schema.org/WebApplication">
+            <meta itemprop="applicationCategory" content="BusinessApplication" />
+            <meta itemprop="operatingSystem" content="Web Browser" />
             <a href="#" class="mxd-demo-grid__image active-cursor-permanent open-case-study-btn"
               data-project-id="clientflow" data-cursor-text="VIEW&#10;CASE STUDY">
-              <img src="./img/banner-clientflow.png" alt="ClientFlow CRM Application Interface" />
+              <img src="./img/banner-clientflow.png" alt="ClientFlow CRM Application Interface — PHP MySQL Lead Tracking System" itemprop="image" />
             </a>
             <div class="mxd-demo-grid__caption">
-              <a href="#" class="project-name-s open-case-study-btn" data-project-id="clientflow">ClientFlow: CRM
-                Management System ↗</a>
-              <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.5;">
-                A lightweight CRM I built using PHP and MySQL to replace spreadsheet tracking for client leads and
-                follow-ups.
+              <a href="#" class="project-name-s open-case-study-btn" data-project-id="clientflow" itemprop="name">ClientFlow: CRM Management System ↗</a>
+              <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.5;" itemprop="description">
+                A lightweight CRM I built using PHP and MySQL to replace spreadsheet tracking for client leads and follow-ups.
               </p>
               <div class="mxd-demo-grid__tags">
                 <span class="tag">PHP</span>
@@ -692,24 +836,24 @@
               <div style="display:flex; gap:12px; margin-top:10px;">
                 <button class="scroll-explore open-case-study-btn" data-project-id="clientflow"
                   style="padding:6px 16px; font-size:0.78rem;">VIEW CASE STUDY ↗</button>
-                <a href="https://clientflow.free.nf/" target="_blank" class="scroll-explore btn-outline"
-                  style="padding:6px 16px; font-size:0.78rem;">LIVE DEMO ↗</a>
+                <a href="https://clientflow.free.nf/" target="_blank" rel="noopener" class="scroll-explore btn-outline"
+                  style="padding:6px 16px; font-size:0.78rem;" itemprop="url">LIVE DEMO ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- Card 2: NewsBoard Live News -->
-          <article class="mxd-demo-grid__item" data-category="webdev" data-project-id="newsboard">
+          <!-- Card 3: NewsBoard Live News -->
+          <article class="mxd-demo-grid__item" data-category="webdev" data-project-id="newsboard" itemscope itemtype="https://schema.org/WebApplication">
+            <meta itemprop="applicationCategory" content="NewsApplication" />
+            <meta itemprop="operatingSystem" content="Web Browser" />
             <a href="#" class="mxd-demo-grid__image active-cursor-permanent open-case-study-btn"
               data-project-id="newsboard" data-cursor-text="VIEW&#10;CASE STUDY">
-              <img src="./img/banner-newsboard.png" alt="NewsBoard Live News Article Portal Interface" />
+              <img src="./img/banner-newsboard.png" alt="NewsBoard Live News Article Portal Interface — React 18 News Aggregator" itemprop="image" />
             </a>
             <div class="mxd-demo-grid__caption">
-              <a href="#" class="project-name-s open-case-study-btn" data-project-id="newsboard">NewsBoard: Live News
-                Portal ↗</a>
-              <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.5;">
-                A fast, clean news web app built with React 18 that fetches real-time articles from news APIs with
-                category filters and search.
+              <a href="#" class="project-name-s open-case-study-btn" data-project-id="newsboard" itemprop="name">NewsBoard: Live News Portal ↗</a>
+              <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.5;" itemprop="description">
+                A fast, clean news web app built with React 18 that fetches real-time articles from news APIs with category filters and search.
               </p>
               <div class="mxd-demo-grid__tags">
                 <span class="tag">React 18</span>
@@ -719,24 +863,24 @@
               <div style="display:flex; gap:12px; margin-top:10px;">
                 <button class="scroll-explore open-case-study-btn" data-project-id="newsboard"
                   style="padding:6px 16px; font-size:0.78rem;">VIEW CASE STUDY ↗</button>
-                <a href="https://news-board-orcin.vercel.app/" target="_blank" class="scroll-explore btn-outline"
-                  style="padding:6px 16px; font-size:0.78rem;">LIVE DEMO ↗</a>
+                <a href="https://news-board-orcin.vercel.app/" target="_blank" rel="noopener" class="scroll-explore btn-outline"
+                  style="padding:6px 16px; font-size:0.78rem;" itemprop="url">LIVE DEMO ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- Card 3: SneakSpot E-Commerce -->
-          <article class="mxd-demo-grid__item" data-category="branding" data-project-id="sneakspot">
+          <!-- Card 4: SneakSpot E-Commerce -->
+          <article class="mxd-demo-grid__item" data-category="branding" data-project-id="sneakspot" itemscope itemtype="https://schema.org/WebApplication">
+            <meta itemprop="applicationCategory" content="ShoppingApplication" />
+            <meta itemprop="operatingSystem" content="Web Browser" />
             <a href="#" class="mxd-demo-grid__image active-cursor-permanent open-case-study-btn"
               data-project-id="sneakspot" data-cursor-text="VIEW&#10;CASE STUDY">
-              <img src="./img/banner-sneakspot.png" alt="SneakSpot Footwear E-Commerce Webstore Interface" />
+              <img src="./img/banner-sneakspot.png" alt="SneakSpot Footwear E-Commerce Webstore Interface — Vanilla JavaScript Cart App" itemprop="image" />
             </a>
             <div class="mxd-demo-grid__caption">
-              <a href="#" class="project-name-s open-case-study-btn" data-project-id="sneakspot">SneakSpot: Footwear
-                Storefront ↗</a>
-              <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.5;">
-                An interactive footwear shop built with vanilla JavaScript, featuring a persistent shopping cart using
-                browser LocalStorage.
+              <a href="#" class="project-name-s open-case-study-btn" data-project-id="sneakspot" itemprop="name">SneakSpot: Footwear Storefront ↗</a>
+              <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.5;" itemprop="description">
+                An interactive footwear shop built with vanilla JavaScript, featuring a persistent shopping cart using browser LocalStorage.
               </p>
               <div class="mxd-demo-grid__tags">
                 <span class="tag">HTML5</span>
@@ -747,24 +891,24 @@
               <div style="display:flex; gap:12px; margin-top:10px;">
                 <button class="scroll-explore open-case-study-btn" data-project-id="sneakspot"
                   style="padding:6px 16px; font-size:0.78rem;">VIEW CASE STUDY ↗</button>
-                <a href="https://sneak-spot.vercel.app/" target="_blank" class="scroll-explore btn-outline"
-                  style="padding:6px 16px; font-size:0.78rem;">LIVE DEMO ↗</a>
+                <a href="https://sneak-spot.vercel.app/" target="_blank" rel="noopener" class="scroll-explore btn-outline"
+                  style="padding:6px 16px; font-size:0.78rem;" itemprop="url">LIVE DEMO ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- Card 4: MemoNest Secure Diary -->
-          <article class="mxd-demo-grid__item" data-category="software" data-project-id="memonest">
+          <!-- Card 5: MemoNest Secure Diary -->
+          <article class="mxd-demo-grid__item" data-category="software" data-project-id="memonest" itemscope itemtype="https://schema.org/WebApplication">
+            <meta itemprop="applicationCategory" content="SecurityApplication" />
+            <meta itemprop="operatingSystem" content="Web Browser" />
             <a href="#" class="mxd-demo-grid__image active-cursor-permanent open-case-study-btn"
               data-project-id="memonest" data-cursor-text="VIEW&#10;CASE STUDY">
-              <img src="./img/banner-memonest.png" alt="MemoNest Secure Personal Diary Interface" />
+              <img src="./img/banner-memonest.png" alt="MemoNest Secure Personal Diary Interface — PHP Auth Notes Application" itemprop="image" />
             </a>
             <div class="mxd-demo-grid__caption">
-              <a href="#" class="project-name-s open-case-study-btn" data-project-id="memonest">MemoNest: Secure
-                Personal Diary ↗</a>
-              <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.5;">
-                A private digital diary web app where users can write, tag, search, and securely lock personal daily
-                notes.
+              <a href="#" class="project-name-s open-case-study-btn" data-project-id="memonest" itemprop="name">MemoNest: Secure Personal Diary ↗</a>
+              <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.5;" itemprop="description">
+                A private digital diary web app where users can write, tag, search, and securely lock personal daily notes.
               </p>
               <div class="mxd-demo-grid__tags">
                 <span class="tag">PHP</span>
@@ -774,24 +918,24 @@
               <div style="display:flex; gap:12px; margin-top:10px;">
                 <button class="scroll-explore open-case-study-btn" data-project-id="memonest"
                   style="padding:6px 16px; font-size:0.78rem;">VIEW CASE STUDY ↗</button>
-                <a href="https://memonest.infinityfreeapp.com" target="_blank" class="scroll-explore btn-outline"
-                  style="padding:6px 16px; font-size:0.78rem;">LIVE DEMO ↗</a>
+                <a href="https://memonest.infinityfreeapp.com" target="_blank" rel="noopener" class="scroll-explore btn-outline"
+                  style="padding:6px 16px; font-size:0.78rem;" itemprop="url">LIVE DEMO ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- Card 5: SalesPilot CRM -->
-          <article class="mxd-demo-grid__item" data-category="software" data-project-id="salespilot">
+          <!-- Card 6: SalesPilot CRM -->
+          <article class="mxd-demo-grid__item" data-category="software" data-project-id="salespilot" itemscope itemtype="https://schema.org/WebApplication">
+            <meta itemprop="applicationCategory" content="BusinessApplication" />
+            <meta itemprop="operatingSystem" content="Web Browser" />
             <a href="#" class="mxd-demo-grid__image active-cursor-permanent open-case-study-btn"
               data-project-id="salespilot" data-cursor-text="VIEW&#10;CASE STUDY">
-              <img src="./img/banner-salespilot.png" alt="SalesPilot CRM System Interface" />
+              <img src="./img/banner-salespilot.png" alt="SalesPilot CRM System Interface — PHP Sales &amp; Lead Management Platform" itemprop="image" />
             </a>
             <div class="mxd-demo-grid__caption">
-              <a href="#" class="project-name-s open-case-study-btn" data-project-id="salespilot">SalesPilot CRM: Sales
-                &amp; Lead Management ↗</a>
-              <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.5;">
-                A multi-role CRM built with PHP and MySQL to manage customer leads, quotation generation, automated
-                follow-ups, and team permissions.
+              <a href="#" class="project-name-s open-case-study-btn" data-project-id="salespilot" itemprop="name">SalesPilot CRM: Sales &amp; Lead Management ↗</a>
+              <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.5;" itemprop="description">
+                A multi-role CRM built with PHP and MySQL to manage customer leads, quotation generation, automated follow-ups, and team permissions.
               </p>
               <div class="mxd-demo-grid__tags">
                 <span class="tag">PHP</span>
@@ -802,24 +946,24 @@
               <div style="display:flex; gap:12px; margin-top:10px;">
                 <button class="scroll-explore open-case-study-btn" data-project-id="salespilot"
                   style="padding:6px 16px; font-size:0.78rem;">VIEW CASE STUDY ↗</button>
-                <a href="https://github.com/raghavudayy/SalesPilot" target="_blank" class="scroll-explore btn-outline"
-                  style="padding:6px 16px; font-size:0.78rem;">GITHUB REPO ↗</a>
+                <a href="https://github.com/raghavudayy/SalesPilot" target="_blank" rel="noopener" class="scroll-explore btn-outline"
+                  style="padding:6px 16px; font-size:0.78rem;" itemprop="url">GITHUB REPO ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- Card 6: StreamTube Video Platform -->
-          <article class="mxd-demo-grid__item" data-category="webdev" data-project-id="streamtube">
+          <!-- Card 7: StreamTube Video Platform -->
+          <article class="mxd-demo-grid__item" data-category="webdev" data-project-id="streamtube" itemscope itemtype="https://schema.org/WebApplication">
+            <meta itemprop="applicationCategory" content="MultimediaApplication" />
+            <meta itemprop="operatingSystem" content="Web Browser" />
             <a href="#" class="mxd-demo-grid__image active-cursor-permanent open-case-study-btn"
               data-project-id="streamtube" data-cursor-text="VIEW&#10;CASE STUDY">
-              <img src="./img/banner-streamtubepng.png" alt="StreamTube Video Streaming Platform Interface" />
+              <img src="./img/banner-streamtubepng.png" alt="StreamTube Video Streaming Platform Interface — YouTube-inspired Media App" itemprop="image" />
             </a>
             <div class="mxd-demo-grid__caption">
-              <a href="#" class="project-name-s open-case-study-btn" data-project-id="streamtube">StreamTube: Video
-                Streaming Platform ↗</a>
-              <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.5;">
-                A media streaming web app inspired by YouTube with channel management, video uploads, search,
-                subscriptions, and watch history.
+              <a href="#" class="project-name-s open-case-study-btn" data-project-id="streamtube" itemprop="name">StreamTube: Video Streaming Platform ↗</a>
+              <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.5;" itemprop="description">
+                A media streaming web app inspired by YouTube with channel management, video uploads, search, subscriptions, and watch history.
               </p>
               <div class="mxd-demo-grid__tags">
                 <span class="tag">HTML5</span>
@@ -831,8 +975,8 @@
               <div style="display:flex; gap:12px; margin-top:10px;">
                 <button class="scroll-explore open-case-study-btn" data-project-id="streamtube"
                   style="padding:6px 16px; font-size:0.78rem;">VIEW CASE STUDY ↗</button>
-                <a href="https://github.com/raghavudayy/StreamTube" target="_blank" class="scroll-explore btn-outline"
-                  style="padding:6px 16px; font-size:0.78rem;">GITHUB REPO ↗</a>
+                <a href="https://github.com/raghavudayy/StreamTube" target="_blank" rel="noopener" class="scroll-explore btn-outline"
+                  style="padding:6px 16px; font-size:0.78rem;" itemprop="url">GITHUB REPO ↗</a>
               </div>
             </div>
           </article>
