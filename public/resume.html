@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +8,7 @@
   <style>
     @page {
       size: letter;
-      margin: 0.35in 0.45in;
+      margin: 0.35in 0.4in;
     }
 
     :root {
@@ -15,7 +16,7 @@
       --text-muted: #374151;
       --text-light: #4b5563;
       --border-color: #111827;
-      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      --font-family: Arial, Helvetica, sans-serif;
     }
 
     * {
@@ -28,32 +29,34 @@
       font-family: var(--font-family);
       color: var(--text-dark);
       background: #f3f4f6;
-      line-height: 1.35;
-      font-size: 9.5pt;
-      padding: 24px 16px;
+      line-height: 1.3;
+      font-size: 9pt;
+      padding: 20px 16px;
+      -webkit-font-smoothing: antialiased;
     }
 
     .no-print-bar {
-      max-width: 820px;
-      margin: 0 auto 16px auto;
+      max-width: 800px;
+      margin: 0 auto 12px auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
       background: #111827;
       color: #ffffff;
-      padding: 10px 20px;
+      padding: 8px 16px;
       border-radius: 6px;
+      font-size: 0.85rem;
     }
 
     .no-print-btn {
       background: #2563eb;
       color: #ffffff;
       border: none;
-      padding: 7px 14px;
+      padding: 6px 12px;
       font-weight: 600;
       border-radius: 4px;
       cursor: pointer;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       text-decoration: none;
       display: inline-block;
     }
@@ -63,53 +66,53 @@
     }
 
     .resume-page {
-      max-width: 820px;
+      max-width: 800px;
       margin: 0 auto;
       background: #ffffff;
-      padding: 30px 36px;
+      padding: 24px 30px;
       border: 1px solid #d1d5db;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
 
     header {
       border-bottom: 2px solid var(--border-color);
-      padding-bottom: 8px;
-      margin-bottom: 10px;
+      padding-bottom: 6px;
+      margin-bottom: 8px;
       text-align: center;
     }
 
     h1 {
-      font-size: 19pt;
+      font-size: 18pt;
       font-weight: 800;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.03em;
       margin-bottom: 2px;
       text-transform: uppercase;
       color: var(--text-dark);
     }
 
     .header-subtitle {
-      font-size: 10.5pt;
+      font-size: 10pt;
       font-weight: 700;
       color: var(--text-muted);
-      margin-bottom: 5px;
-      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
     }
 
     .contact-row {
-      font-size: 8.8pt;
+      font-size: 8.5pt;
       color: var(--text-muted);
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
-      line-height: 1.3;
+      gap: 6px 10px;
+      line-height: 1.25;
     }
 
     .contact-row a {
       color: var(--text-dark);
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 600;
     }
 
     .contact-row a:hover {
@@ -117,15 +120,15 @@
     }
 
     section {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     h2 {
-      font-size: 10pt;
+      font-size: 9.5pt;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.06em;
-      border-bottom: 1px solid var(--border-color);
+      border-bottom: 1.5px solid var(--border-color);
       padding-bottom: 2px;
       margin-bottom: 5px;
       color: var(--text-dark);
@@ -134,27 +137,28 @@
     .summary-text {
       font-size: 8.8pt;
       color: var(--text-muted);
-      line-height: 1.38;
+      line-height: 1.32;
     }
 
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 95px 1fr;
-      gap: 2px 10px;
-      font-size: 8.8pt;
+    .skills-list-ats {
+      list-style-type: none;
+      margin-left: 0;
     }
 
-    .skills-category {
-      font-weight: 700;
-      color: var(--text-dark);
-    }
-
-    .skills-list {
+    .skills-list-ats li {
+      font-size: 8.5pt;
+      margin-bottom: 2.5px;
+      line-height: 1.3;
       color: var(--text-muted);
     }
 
+    .skills-list-ats strong {
+      color: var(--text-dark);
+      font-weight: 700;
+    }
+
     .item-block {
-      margin-bottom: 7px;
+      margin-bottom: 6px;
     }
 
     .item-header {
@@ -162,62 +166,77 @@
       justify-content: space-between;
       align-items: baseline;
       font-weight: 700;
-      font-size: 9.2pt;
+      font-size: 9pt;
       color: var(--text-dark);
     }
 
     .item-header a,
     .project-link {
       color: #2563eb;
-      text-decoration: underline;
+      text-decoration: none;
       font-weight: 600;
       font-size: 8.5pt;
-      font-style: normal;
     }
 
     .item-header a:hover,
     .project-link:hover {
-      color: #1d4ed8;
+      text-decoration: underline;
     }
 
     .item-sub {
       display: flex;
       justify-content: space-between;
       font-style: italic;
-      font-size: 8.8pt;
+      font-size: 8.5pt;
       color: var(--text-light);
       margin-bottom: 2px;
     }
 
-    ul {
+    ul.bullet-list {
       list-style-type: disc;
-      margin-left: 15px;
+      margin-left: 14px;
     }
 
-    li {
-      font-size: 8.8pt;
+    ul.bullet-list li {
+      font-size: 8.5pt;
       margin-bottom: 2px;
-      line-height: 1.32;
+      line-height: 1.28;
       color: var(--text-muted);
+    }
+
+    ul.bullet-list li strong {
+      color: var(--text-dark);
     }
 
     @media print {
       body {
         background: #ffffff;
         padding: 0;
+        font-size: 8.8pt;
       }
+
       .no-print-bar {
         display: none !important;
       }
+
       .resume-page {
         border: none;
         box-shadow: none;
         padding: 0;
         max-width: 100%;
       }
+
+      section {
+        page-break-inside: avoid;
+      }
+
+      .item-block {
+        page-break-inside: avoid;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <div class="no-print-bar">
@@ -231,63 +250,44 @@
   <div class="resume-page">
     <header>
       <h1>Uday Pratap Raghav</h1>
-      <div class="header-subtitle">Full Stack Developer</div>
+      <div class="header-subtitle">Full Stack Software Engineer</div>
       <div class="contact-row">
         <span>Bulandshahr, UP, India</span>
         <span>|</span>
         <span>+91 9837765643</span>
         <span>|</span>
         <span><a href="mailto:webdevuday@gmail.com">webdevuday@gmail.com</a></span>
-      </div>
-      <div class="contact-row" style="margin-top: 2px;">
-        <span>Portfolio: <a href="https://www.raghavudayy.in/" target="_blank">raghavudayy.in</a></span>
         <span>|</span>
-        <span>GitHub: <a href="https://github.com/raghavudayy" target="_blank">github.com/raghavudayy</a></span>
+        <span><a href="https://www.raghavudayy.in/" target="_blank">raghavudayy.in</a></span>
         <span>|</span>
-        <span>LinkedIn: <a href="https://www.linkedin.com/in/raghavudayy" target="_blank">linkedin.com/in/raghavudayy</a></span>
+        <span><a href="https://github.com/raghavudayy" target="_blank">github.com/raghavudayy</a></span>
+        <span>|</span>
+        <span><a href="https://www.linkedin.com/in/raghavudayy" target="_blank">linkedin.com/in/raghavudayy</a></span>
       </div>
     </header>
 
     <section>
       <h2>Professional Summary</h2>
       <p class="summary-text">
-        Full Stack Developer with hands-on experience building scalable web applications using React, TypeScript, Node.js, Express, MongoDB, Socket.IO, PHP 8, and MySQL. Enjoys solving real-world challenges, architecting clean APIs, crafting modern UIs, and continuously learning new technologies.
+        Full Stack Software Engineer with hands-on experience building scalable, real-time web applications using
+        <strong>React 18</strong>, <strong>TypeScript</strong>, <strong>Node.js</strong>, <strong>Express</strong>,
+        <strong>MongoDB</strong>, <strong>Socket.IO</strong>, <strong>PHP 8</strong>, and <strong>MySQL</strong>.
+        Experienced in designing RESTful APIs, responsive front-end interfaces, role-based access systems, and
+        normalized database architectures.
       </p>
     </section>
 
     <section>
-      <h2>Key Highlights</h2>
-      <ul>
-        <li>Built 9+ full-stack web applications including real-time social platforms, CRMs, and React portals.</li>
-        <li>Software Developer Intern at Sunlite Systems Pvt. Ltd. (Feb 2026 — Present).</li>
-        <li>Personal Portfolio &amp; Code Showcase: <a href="https://www.raghavudayy.in/" target="_blank" class="project-link">raghavudayy.in</a></li>
-      </ul>
-    </section>
-
-    <section>
       <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skills-category">Languages:</div>
-        <div class="skills-list">JavaScript (ES6+), TypeScript, PHP 8, SQL, HTML5, CSS3, Java (Basics)</div>
-        
-        <div class="skills-category">Frontend:</div>
-        <div class="skills-list">React 18, TypeScript, Tailwind CSS, Framer Motion, JavaScript, HTML5, CSS3, Bootstrap 5, Vite</div>
-
-        <div class="skills-category">Backend:</div>
-        <div class="skills-list">Node.js, Express.js, Socket.IO (Real-Time Websockets), PHP 8, RESTful APIs, JWT Auth, Session Security</div>
-
-        <div class="skills-category">Databases &amp; Storage:</div>
-        <div class="skills-list">MongoDB, Mongoose ORM, MySQL, Cloudinary Media Storage, Schema Normalization, Relational Joins</div>
-
-        <div class="skills-category">Tools:</div>
-        <div class="skills-list">Git, GitHub, Postman, VS Code, XAMPP Server</div>
-
-        <div class="skills-category">Testing:</div>
-        <div class="skills-list">Cross-Browser Testing, Layout Verification, Selenium WebDriver (Basics)</div>
-
-        <div class="skills-category">Deployment:</div>
-        <div class="skills-list">Vercel, Render, InfinityFree</div>
-      </div>
+      <ul class="skills-list-ats">
+        <li><strong>Languages:</strong> JavaScript (ES6+), TypeScript, PHP 8, SQL, HTML5, CSS3, Java (Basics)</li>
+        <li><strong>Frontend &amp; UI:</strong> React 18, TypeScript, Tailwind CSS, Framer Motion, Bootstrap 5, Vite,
+          Responsive Web Design</li>
+        <li><strong>Backend &amp; Database:</strong> Node.js, Express.js, Socket.IO (WebSockets), PHP 8, RESTful APIs,
+          JWT Auth, MongoDB, Mongoose, MySQL</li>
+        <li><strong>Tools &amp; DevOps:</strong> Git, GitHub, Postman, VS Code, Cloudinary API, XAMPP, Vercel, Render,
+          Cross-Browser Testing</li>
+      </ul>
     </section>
 
     <section>
@@ -295,17 +295,21 @@
       <div class="item-block">
         <div class="item-header">
           <span>Sunlite Systems Pvt. Ltd.</span>
-          <span>Vaishali, Ghaziabad, UP, India</span>
+          <span>Ghaziabad, UP, India</span>
         </div>
         <div class="item-sub">
           <span>Software Developer Intern</span>
           <span>Feb 2026 — Present</span>
         </div>
-        <ul>
-          <li>Developed responsive client-side interface modules and web views using React.js and vanilla JavaScript ES6+.</li>
-          <li>Implemented backend PHP REST API endpoints and data handlers using parameterized SQL queries to secure database interactions.</li>
-          <li>Designed normalized MySQL tables and indexes to improve data organization and efficient querying.</li>
-          <li>Performed cross-browser testing across desktop and mobile devices to verify UI consistency and resolve layout issues.</li>
+        <ul class="bullet-list">
+          <li>Engineered responsive client-side interface modules and web views using <strong>React 18</strong> and
+            <strong>JavaScript ES6+</strong>.</li>
+          <li>Developed secure backend <strong>PHP 8 REST API</strong> endpoints utilizing parameterized SQL queries to
+            safeguard database interactions.</li>
+          <li>Designed normalized <strong>MySQL</strong> database schemas and indexes to optimize query execution and
+            data retrieval performance.</li>
+          <li>Collaborated with senior developers to perform cross-browser layout testing and resolve UI consistency
+            issues across devices.</li>
         </ul>
       </div>
     </section>
@@ -315,62 +319,59 @@
 
       <div class="item-block">
         <div class="item-header">
-          <span>Tarang — Modern Full-Stack Social Media Platform</span>
-          <span><a href="https://github.com/raghavudayy/Tarang" target="_blank" class="project-link">GitHub Repo ↗</a></span>
+          <span>Tarang — Real-Time Social Media Platform</span>
+          <span><a href="https://github.com/raghavudayy/Tarang" target="_blank" class="project-link">GitHub
+              Repository</a></span>
         </div>
         <div class="item-sub">
-          <span>Technologies: React 18, TypeScript, Node.js, Express.js, MongoDB, Socket.IO, Tailwind CSS, Framer Motion, JWT</span>
+          <span>Tech Stack: React 18, TypeScript, Node.js, Express.js, MongoDB, Socket.IO, Tailwind CSS, JWT</span>
+          <span>2026</span>
         </div>
-        <ul>
-          <li>Architected a full-stack social networking application inspired by X (Twitter) &amp; Instagram with real-time messaging, post feeds, and creator discovery.</li>
-          <li>Engineered real-time 1-on-1 chat and live alerts using Socket.IO web sockets paired with a scalable Express.js REST API gateway.</li>
-          <li>Designed MongoDB document schemas for user relationship graphs, post feeds, likes, reposts, comments, and Cloudinary media uploads.</li>
-          <li>Implemented secure JWT authentication, password hashing with bcrypt, protected API routes, and light/dark theme switching.</li>
-        </ul>
-      </div>
-      
-      <div class="item-block">
-        <div class="item-header">
-          <span>SalesPilot CRM — Sales &amp; Lead Management Platform</span>
-          <span><a href="https://github.com/raghavudayy/SalesPilot" target="_blank" class="project-link">GitHub Repo ↗</a></span>
-        </div>
-        <div class="item-sub">
-          <span>Technologies: PHP 8, MySQL, Bootstrap 5, JavaScript (ES6+), PHPMailer</span>
-        </div>
-        <ul>
-          <li>Built a multi-role CRM platform with role-based permissions (Admin vs. Employee) to organize lead pipelines, customer records, and quotation workflows.</li>
-          <li>Designed normalized MySQL relational schemas and structured multi-table SQL join queries to track sales team deal progress.</li>
-          <li>Integrated PHPMailer for automated transactional email notifications upon lead updates and quote submissions.</li>
+        <ul class="bullet-list">
+          <li>Architected a full-stack social platform featuring real-time messaging, post feeds, creator discovery, and
+            user relationships.</li>
+          <li>Integrated <strong>Socket.IO</strong> WebSockets with an Express.js API gateway to deliver instant
+            notifications and 1-on-1 chat.</li>
+          <li>Designed <strong>MongoDB</strong> document schemas for post feeds, user graphs, and media uploads via
+            Cloudinary API with <strong>JWT</strong> authentication.</li>
         </ul>
       </div>
 
       <div class="item-block">
         <div class="item-header">
-          <span>StreamTube — Media Streaming Web Application</span>
-          <span><a href="https://github.com/raghavudayy/StreamTube" target="_blank" class="project-link">GitHub Repo ↗</a></span>
+          <span>SalesPilot CRM — Lead &amp; Pipeline Management System</span>
+          <span><a href="https://github.com/raghavudayy/SalesPilot" target="_blank" class="project-link">GitHub
+              Repository</a></span>
         </div>
         <div class="item-sub">
-          <span>Technologies: JavaScript (ES6+), PHP 8, MySQL, HTML5, CSS3</span>
+          <span>Tech Stack: PHP 8, MySQL, Bootstrap 5, JavaScript (ES6+), PHPMailer</span>
+          <span>2025</span>
         </div>
-        <ul>
-          <li>Developed a video streaming web application featuring channel creation, custom media player controls, playlist management, and video search.</li>
-          <li>Developed backend functionality using PHP and MySQL to manage channels, videos, subscriptions, and watch history.</li>
-          <li>Created custom JavaScript event listeners for asynchronous video playback, volume controls, and theme switching.</li>
+        <ul class="bullet-list">
+          <li>Built a multi-role sales CRM with role-based access control (Admin vs. Employee) to organize lead
+            pipelines and deal analytics.</li>
+          <li>Structured normalized <strong>MySQL</strong> relational tables and complex SQL join queries for efficient
+            record retrieval and team deal progress.</li>
+          <li>Automated deal alerts and transaction notifications using <strong>PHPMailer</strong> integration.</li>
         </ul>
       </div>
 
       <div class="item-block">
         <div class="item-header">
-          <span>NewsBoard — Live News Article Portal</span>
-          <span><a href="https://news-board-orcin.vercel.app/" target="_blank" class="project-link">Live Demo ↗</a> | <a href="https://github.com/raghavudayy/NewsBoard" target="_blank" class="project-link">GitHub Repo ↗</a></span>
+          <span>NewsBoard — Asynchronous Live News Portal</span>
+          <span><a href="https://news-board-orcin.vercel.app/" target="_blank" class="project-link">Live Demo</a> | <a
+              href="https://github.com/raghavudayy/NewsBoard" target="_blank" class="project-link">GitHub
+              Repository</a></span>
         </div>
         <div class="item-sub">
-          <span>Technologies: React 18, JavaScript (ES6+), REST API, Vite, CSS Modules</span>
+          <span>Tech Stack: React 18, JavaScript (ES6+), REST API, Vite, CSS Modules</span>
+          <span>2025</span>
         </div>
-        <ul>
-          <li>Built a React application that fetches live news articles using a public REST API with category filters and search.</li>
-          <li>Implemented custom React hooks (`useFetchNews`) for asynchronous API data retrieval, error handling, and component loading states.</li>
-          <li>Created debounced search inputs and category filters to enable fast content navigation without layout shifts.</li>
+        <ul class="bullet-list">
+          <li>Built a dynamic news dashboard leveraging custom React hooks (`useFetchNews`) for live REST API data
+            fetching.</li>
+          <li>Implemented debounced search inputs and category filters to deliver smooth content filtering without
+            layout shifts.</li>
         </ul>
       </div>
     </section>
@@ -386,13 +387,14 @@
           <span>Bachelor of Computer Applications (BCA)</span>
           <span>2023 — 2026</span>
         </div>
-        <ul>
-          <li>Core Coursework: Data Structures, Relational Database Management Systems (RDBMS), Web Development, and Software Testing fundamentals.</li>
-          <li>Academic Projects: Built 8 practical full-stack projects combining PHP and MySQL backends with React &amp; JavaScript frontends.</li>
+        <ul class="bullet-list">
+          <li><strong>Relevant Coursework</strong>: Data Structures &amp; Algorithms, Object-Oriented Programming (OOP),
+            Relational Database Management Systems (RDBMS), Web Architecture, Software Testing.</li>
         </ul>
       </div>
     </section>
   </div>
 
 </body>
+
 </html>
