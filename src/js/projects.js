@@ -17,14 +17,14 @@ export const PROJECTS_DATA = [
     features: [
       'Secure User Auth & Session Management (JWT & Bcrypt)',
       'Social Feed with Posts, Likes, Comments, Reposts & Bookmarks',
-      'Real-Time One-to-One Messaging & Live Notifications (Socket.IO)',
+      'Interactive One-to-One Messaging & Live Notifications',
       'Custom User Profiles, Bio, Cover Banners & Follower Graphs',
       'Trending Hashtags, User Search & Creator Discovery',
       'Glassmorphism & Liquid UI with Light/Dark Theme Switching'
     ],
-    challenges: 'Designing a scalable MongoDB schema for social graphs, handling real-time Socket.IO socket connections across mobile breakpoints, managing infinite scroll state efficiently, and securing protected REST routes.',
-    architecture: 'Layered Full-Stack Architecture: React SPA Client → Socket.IO & Express REST Gateway API → MongoDB Database → Cloudinary Media CDN.',
-    lessons: 'Deepened my knowledge of real-time web socket state synchronization, JWT auth lifecycles, MongoDB document modeling, responsive UI performance, and component-driven architecture.',
+    challenges: 'Designing a scalable MySQL relational schema for social graphs, handling state updates across mobile breakpoints, managing infinite scroll state efficiently, and securing protected REST routes.',
+    architecture: 'Layered Full-Stack Architecture: React SPA Client → PHP 8 REST API Gateway → MySQL Relational Database.',
+    lessons: 'Deepened my knowledge of REST API state synchronization, JWT auth lifecycles, MySQL relational data modeling, responsive UI performance, and component-driven architecture.',
     futureImprovements: 'Video posts & stories, group video calling, AI-powered content recommendation feeds, and end-to-end encrypted messaging.',
     image: './img/banner-tarang.png',
     liveUrl: 'https://github.com/raghavudayy/Tarang',
