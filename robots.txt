@@ -1,4 +1,6 @@
+# Robots.txt for https://www.raghavudayy.in/
 User-agent: *
 Allow: /
 
+# Sitemaps
 Sitemap: https://www.raghavudayy.in/sitemap.xml
