@@ -18,8 +18,8 @@
   <link rel="canonical" href="https://www.raghavudayy.in/terms-and-conditions.html">
 
   <!-- Favicons -->
-  <link rel="icon" href="/images/favicon%20copy.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/images/favicon%20copy.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="/images/avatar.png">
 
   <!-- Structured Data (JSON-LD) -->
@@ -557,6 +557,22 @@
   }
 
   /* Responsive Adjustments */
+  .legal_meta_chip {
+    font-size: 13px;
+    font-weight: 500;
+    color: #64748b;
+  }
+
+  .legal_mobile_toc_summary .toc_arrow {
+    display: inline-block;
+    transition: transform 0.25s ease;
+  }
+
+  .legal_mobile_toc_details[open] .legal_mobile_toc_summary .toc_arrow {
+    transform: rotate(180deg);
+  }
+
+  /* Responsive Adjustments */
   @media screen and (max-width: 991px) {
     .legal_grid_layout {
       grid-template-columns: 1fr;
@@ -577,26 +593,179 @@
   }
 
   @media screen and (max-width: 767px) {
+    .legal_container,
+    .legal_hero_container {
+      padding: 0 16px !important;
+    }
+
     .legal_hero_wrapper {
-      padding: 32px 0 24px;
+      padding: 24px 0 20px !important;
+    }
+
+    .legal_page_title {
+      font-size: clamp(26px, 7vw, 34px) !important;
+      line-height: 1.25 !important;
+      margin-bottom: 12px !important;
+    }
+
+    .legal_page_intro {
+      font-size: 15px !important;
+      line-height: 1.65 !important;
+      margin-bottom: 16px !important;
+    }
+
+    .legal_status_bar {
+      display: grid !important;
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      gap: 10px 14px !important;
+      padding-top: 14px !important;
+      font-size: 12.5px !important;
+      width: 100% !important;
+    }
+
+    .legal_status_item {
+      font-size: 12.5px !important;
+      word-break: break-word !important;
+      line-height: 1.4 !important;
+    }
+
+    .legal_main_section {
+      padding: 24px 0 60px !important;
+    }
+
+    .legal_mobile_toc_wrapper {
+      margin-bottom: 20px !important;
+    }
+
+    .legal_mobile_toc_summary {
+      padding: 14px 16px !important;
+      font-size: 14px !important;
+    }
+
+    .legal_mobile_toc_body {
+      padding: 0 12px 14px !important;
+      max-height: 320px !important;
+    }
+
+    .legal_toc_link {
+      padding: 9px 10px !important;
+      font-size: 13px !important;
+      min-height: 40px !important;
     }
 
     .legal_article_card {
-      padding: 24px 18px;
-      border-radius: 16px;
+      padding: 24px 16px !important;
+      border-radius: 16px !important;
+    }
+
+    .legal_section {
+      scroll-margin-top: 90px !important;
+      margin-bottom: 32px !important;
+      padding-bottom: 28px !important;
     }
 
     .legal_section_header {
-      flex-direction: column;
-      gap: 8px;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 8px !important;
+      margin-bottom: 12px !important;
     }
 
     .legal_section_title {
-      font-size: 20px;
+      font-size: 19px !important;
+      line-height: 1.35 !important;
+    }
+
+    .legal_subheading {
+      font-size: 16px !important;
+      margin: 18px 0 8px !important;
+    }
+
+    .legal_text {
+      font-size: 15px !important;
+      line-height: 1.7 !important;
+      margin-bottom: 14px !important;
+      word-break: break-word !important;
+      overflow-wrap: break-word !important;
+    }
+
+    .legal_list_item {
+      font-size: 14.5px !important;
+      line-height: 1.6 !important;
+      word-break: break-word !important;
+      overflow-wrap: break-word !important;
+    }
+
+    .legal_callout {
+      padding: 14px 14px !important;
+      margin: 18px 0 !important;
+      border-radius: 10px !important;
+    }
+
+    .legal_callout_title {
+      font-size: 14px !important;
+    }
+
+    .legal_callout_text {
+      font-size: 13.5px !important;
+      line-height: 1.6 !important;
     }
 
     .legal_contact_grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr !important;
+      gap: 10px !important;
+      margin: 16px 0 20px !important;
+    }
+
+    .legal_contact_card {
+      padding: 14px 16px !important;
+      border-radius: 10px !important;
+    }
+
+    .legal_contact_value {
+      font-size: 14px !important;
+      word-break: break-word !important;
+      overflow-wrap: break-word !important;
+    }
+
+    .legal_action_row {
+      flex-direction: column !important;
+      align-items: stretch !important;
+      gap: 10px !important;
+      margin-top: 20px !important;
+      padding-top: 16px !important;
+    }
+
+    .legal_action_row .legal_btn_primary,
+    .legal_action_row .legal_btn_secondary {
+      width: 100% !important;
+      justify-content: center !important;
+      margin-left: 0 !important;
+      text-align: center !important;
+      padding: 12px 16px !important;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .legal_status_bar {
+      grid-template-columns: 1fr !important;
+      gap: 8px !important;
+    }
+
+    .legal_page_title {
+      font-size: 24px !important;
+    }
+
+    .legal_badge_row {
+      gap: 8px !important;
+    }
+
+    .legal_meta_chip {
+      font-size: 12px !important;
+    }
+
+    .legal_article_card {
+      padding: 20px 12px !important;
     }
   }
 
@@ -972,35 +1141,101 @@
 
     @media screen and (max-width: 767px) {
       .section.footer {
-        padding-top: 50px !important;
+        padding-top: 40px !important;
         padding-bottom: 24px !important;
-        border-radius: 24px !important;
-        margin-top: 24px !important;
+        border-radius: 20px !important;
+        margin: 20px auto 0 !important;
+        max-width: calc(100% - 24px) !important;
+        width: calc(100% - 24px) !important;
+        background-image: none !important;
+        overflow: hidden !important;
       }
 
       .footer_layout {
-        gap: 36px !important;
+        gap: 28px !important;
       }
 
       .footer_columns_grid {
         grid-template-columns: 1fr !important;
-        gap: 26px !important;
+        gap: 24px !important;
+      }
+
+      .footer_middle_row {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 14px !important;
+      }
+
+      .footer_hero_name_container {
+        order: 1 !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
       }
 
       .footer_name_row {
-        flex-wrap: wrap !important;
-        gap: 8px 12px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 8px !important;
+        width: 100% !important;
+        flex-wrap: nowrap !important;
       }
 
       .footer_tile_text {
-        font-size: clamp(30px, 8.2vw, 44px) !important;
+        font-size: 26px !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.02em !important;
+        color: #0f172a !important;
+        text-align: center !important;
+        line-height: 1.2 !important;
         white-space: normal !important;
       }
 
+      .footer_tile_text.name_intro {
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        color: #64748b !important;
+        margin-bottom: 0 !important;
+      }
+
+      .footer_tile_text.name_fullname {
+        font-size: 26px !important;
+        font-weight: 700 !important;
+        color: #0f172a !important;
+      }
+
       .cover_image_wrap.footer {
-        width: 65px !important;
-        height: 75px !important;
-        display: inline-flex !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 68px !important;
+        height: 68px !important;
+        max-width: 68px !important;
+        min-width: 68px !important;
+        border-radius: 50% !important;
+        margin: 6px auto !important;
+        border: 3px solid #ffffff !important;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12), 0 0 0 1px #e2e8f0 !important;
+        overflow: hidden !important;
+        flex-shrink: 0 !important;
+      }
+
+      .cover_image.footer {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+      }
+
+      .footer_copyright_wrap {
+        order: 2 !important;
+        justify-content: center !important;
+        text-align: center !important;
       }
 
       .footer_graphic_wrap {
@@ -1132,7 +1367,7 @@
           <details class="legal_mobile_toc_details">
             <summary class="legal_mobile_toc_summary">
               <span>Table of Contents (13 Sections)</span>
-              <span aria-hidden="true">&darr;</span>
+              <span class="toc_arrow" aria-hidden="true">&darr;</span>
             </summary>
             <nav class="legal_mobile_toc_body" aria-label="Mobile Table of Contents">
               <a href="#about-this-website" class="legal_toc_link"><span class="legal_toc_num">1.</span> About This Website</a>
@@ -1198,7 +1433,7 @@
                   <line x1="12" y1="8" x2="12" y2="12"></line>
                   <line x1="12" y1="16" x2="12.01" y2="16"></line>
                 </svg>
-                <span>I’mportant Agreement Notice</span>
+                <span>Important Agreement Notice</span>
               </div>
               <p class="legal_callout_text">
                 By accessing, browsing, or utilizing this website, you explicitly acknowledge that you have read, understood, and agreed to be bound by these Terms &amp; Conditions. If you do not agree with these terms, please discontinue using this website immediately.
@@ -1598,7 +1833,7 @@
               <div class="footer_text_wrap footer_name_row">
                 <span class="footer_tile_text name_intro">I’m</span>
                 <div class="cover_image_wrap footer">
-                  <img loading="lazy" src="/images/avatar.png" alt="Uday Pratap Raghav - Freelance Web Developer"
+                  <img loading="lazy" decoding="async" width="60" height="60" src="/images/avatar.webp" alt="Uday Pratap Raghav - Freelance Web Developer"
                     class="cover_image footer">
                 </div>
                 <span class="footer_tile_text name_fullname">Uday Pratap Raghav</span>
@@ -1672,8 +1907,9 @@
       duration: 0.9,
       easing: (t) => 1 - Math.pow(1 - t, 3),
       smoothWheel: true,
-      touchMultiplier: 1,
-      wheelMultiplier: 1
+      touchMultiplier: 1.5,
+      wheelMultiplier: 1,
+      syncTouch: false
     });
     window.lenis = lenis;
 
@@ -1706,6 +1942,7 @@
               }
               const details = this.closest(".legal_mobile_toc_details");
               if (details) {
+                details.open = false;
                 details.removeAttribute("open");
               }
             }

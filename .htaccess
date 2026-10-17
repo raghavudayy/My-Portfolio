@@ -20,13 +20,28 @@ ErrorDocument 404 /404.html
   RewriteRule ^(.*)$ $1.html [L]
 </IfModule>
 
-# 3. Security Headers
+# 3. Security & Cache-Control Headers
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set X-XSS-Protection "1; mode=block"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+  # 1 Year Immutable Cache for Static Media & Fonts
+  <FilesMatch "\.(ico|jpe?g|png|gif|webp|svg|woff2?|ttf|eot)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # 1 Month Cache for Stylesheets & JavaScript
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+
+  # 1 Hour Cache for HTML documents
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
+  </FilesMatch>
 </IfModule>
 
 # 4. Gzip & Deflate Compression
